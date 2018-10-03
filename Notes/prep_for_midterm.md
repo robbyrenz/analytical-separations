@@ -1,4 +1,4 @@
-# Midterm Exam Review
+# **Midterm Exam Review**
 ## Made by Robby Renz
 --------------------------------------
 
@@ -10,7 +10,7 @@
 - Know that the type of analyte impacts your choice of detector
 
 ## GC Detectors
-1. FID (flame ionization detector)
+1. FID (flame ionization detector; this is mass-sensitive)
 2. TCD (thermal conductivity detector)
 3. ECD (electron capture detector)
 4. NPD (thermionic or nitrogen-phosphorous; this is mass-sensitive)
@@ -20,8 +20,8 @@
 8. MSD (mass spectrometric)
 
 ## How GC detectors work in general?
-- detect changes in the composition of column effluent
-- convert that info into a signal
+- Detect changes in the composition of column effluent
+- Convert that info into a signal
 
 ## How to compare responses of different detectors?
 - By checking its characteristics, namely:
@@ -48,9 +48,27 @@
 
 ### **Features and Advantages**
 - Wide linear dynamic range (~10^7)
-- Very sensitive
+- Very sensitive (~ng)
+- Cheap
+- Nearly nonselective & universal; this detector responds to most organic compounds (see disadvantage)
+- Mass-sensitive detector (response depends on amount of analyte reaching detector)
 
 ### **Disadvantages**
+- Universal response isn't always a good thing; how do you tell peaks apart with very complex samples?
+- Doesn't respond to organic compounds that don't burn well (like many halogenated compounds)
+- Doesn't respond to common carrier gas impurities like water, carbon dioxide, sulfur dioxide, NOx, etc.
+- Destructive detector
 
 ### **Great detector for?**
 - Hydrocarbons, like PAHs
+
+-----------------------------------------
+## ***Thermal Conductivity Detector (TCD)***
+
+### How they work?
+- Heat is conducted away from a hot filament at a rate that depends on the thermal conductivity of the gas which is in contact with the filament
+	- Filament is heated by applying an electric current
+	- Temperature of the filament depends on the thermal conductivity of the surrounding gas
+	- So a steady-state signal is obtained when the carrier gas flows continously
+	- When the analyte enters the cell, the gas composition changes, and the thermal conductivity (usually) decreases
+	- Consequently, the temperature of the filament increases and the resistance decreases (I'm sure the resistance should increase with the increase in temperature, unless the filament is an insulator)
