@@ -30,6 +30,8 @@
 	- (linear) dynamic range (LDR)
 	- Selectivity (either universal or highly selective)
 
+-------------------------------------------------------------------
+
 ## ***FID (Flame Ionization Detector)***
 
 ### **How they work?**
@@ -137,5 +139,58 @@
 ### **Great detectors for?**
 - For organics with electronegative functional groups (nitriles, nitro compounds), halogen-containing molecules, conjugated carbonyls & organometallic compounds
 - Note: not good for saturated hydrocarbons, alcohols & ketones
+-----------------------------------------------------------------
+
+# **Inlets**
+- Differences between the main inlet types
+- Its features, advantages & disadvantages
+
+## **3 main inlet types**
+- Split
+- Splitless
+- On-column
+
+## **3 major types of capillary GC inlet system for liquid samples (injection into open tubular columns)**
+*In a nutshell:*
+- ***Split:*** routine for introducing sample volume into open tubular column
+- ***Splitless:*** best for trace levels of high-boilling solutes in low-boiling solvents
+- ***On-Column:*** best for thermally unstable solutes & high high-boiling solvents; best for quantitative analysis
+
+---------------------------------------------------
+## ***Split Injection***
+- Used for major component analysis or for analysis of concentrated samples
+- Technique in which only a small portion of injected sample enters the column via injection through septum
+
+### **Features and Advantages**
+-
+
+### **Disadvantages**
+- 
 
 
+---------------------------------------------------
+## ***Splitless Injection***
+- For trace analysis requiring as much of sample as possible
+
+### **Features and Advantages**
+-
+
+### **Disadvantages**
+- 
+
+
+---------------------------------------------------
+## ***On-Column Injection***
+- Used for samples that decompose above their boiling points
+- Preferred for quantitative analysis
+- Initial column temperature is low enough to condense solutes in a narrow zone
+- Warming the column initiates chromatography by vaporizing the analytes
+
+### **Features and Advantages**
+- Great for thermally unstable compounds
+- Little loss of any solute occurs
+- Ideal for quantitative analysis
+
+### **Disadvantages**
+- Requires a smaller column (diameter-wise) if one wants a better resolution
+- Requires special syringe with thin silica needles for the smaller columns
