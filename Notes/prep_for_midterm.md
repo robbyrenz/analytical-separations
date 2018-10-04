@@ -12,7 +12,7 @@
 ## **GC Detectors**
 1. FID (flame ionization detector; this is mass-sensitive)
 2. TCD (thermal conductivity detector; this is a concentration-sensitive detector)
-3. ECD (electron capture detector)
+3. ECD (electron capture detector; this is a concentration-sensitive detector)
 4. NPD (thermionic or nitrogen-phosphorous; this is mass-sensitive)
 5. FPD (flame photometric; this is mass-sensitive)
 6. AED (atomic emission; this is mass-sensitive)
@@ -104,9 +104,38 @@
 
 ### **Great detectors for?**
 - I guess any organic & inorganic compounds
+- Also, I think they are universal detectors, so great all-rounder
 
 ----------------------------------------------
 ## ***Electron Capture Detector (ECD)***
 
 ### **How they work?**
+- The carrier or makeup gas is either Nitrogen or 5% methane in Argon
+- Gas entering the detector is ionized by high-energy electrons/beta-rays, producing low-energy thermal electrons
+- Beta rays are emitted from a foil containing radioactive 63Ni
+- Electrons formed in the plasma are attracted to the anode
+- This produces a small current
+- This current is maintained at a constant level by variable frequency pulses which is applied between the cathode & the anode
+- When analytes with high electron affinity enter the detector, they capture some electrons & decrease the conducivity of the plasma, thus decreasing the current
+- The detector responds by varying the frequency of the voltage pulses in order to maintain the constant current
+- This frequency of pulses is the detector signal
+- These pulses are related to the concentration of the electron-capturing analytes in the cell
+- Detector gases require high purity 7 high flow rate through detector as sensitivity depends on gas flow rate
+- Concentration-sensitive detector
+
+### **Features and Advantages**
+- Highly selective with electronegative functional groups & halides
+- Highly sensitive for compounds to which it responds (halogenated chemicals): pg to fg
+- Non-destructive
+
+### **Disadvantages**
+- Moisture decreases the sensitivity
+- Narrow linear dynamic range (~10^3), so careful calibration is required
+- Less sensitive (in general) to N, O, P, or aromatic rings; & also to saturated hydrocarbons, alcohols & amines
+- Response factors are complicated (different analytes with same number of halogens can have very different responses)
+
+### **Great detectors for?**
+- For organics with electronegative functional groups (nitriles, nitro compounds), halogen-containing molecules, conjugated carbonyls & organometallic compounds
+- Note: not good for saturated hydrocarbons, alcohols & ketones
+
 
