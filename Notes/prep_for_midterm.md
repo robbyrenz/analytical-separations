@@ -1,7 +1,42 @@
 # **Midterm Exam Review**
 ## Made by Robby Renz
---------------------------------------
 
+--------------------------------------
+# **General Chromatographic Terms**
+- **Plate Number:** 
+- **Plate Height:**
+- **van Deemter Equation:** Describes the dependence of chromatographic plate height, *H*, on the linear flow rate, *u*: *H = A + (B/u) + Cu*
+	- *A* depends on band-broadening processes like multiple flow paths that are independent of flow rate
+	- *B* depends on the rate of diffusion of solute in the mobile phase
+	- *C* depends on the rate of mass transfer between the stationary & mobile phases
+- **Retention Times:** Time, measured from injection, needed for a solute to be eluted from a chromatography column
+- **Dead Time:**
+- **Adjusted Retention Time:**
+- **Capacity Factor:** Also called *retention factor, k*, it is the adjusted retention time for a peak divided by the time for the mobile phase to travel to through the column. Retention factor/capacity factor is also equal to the ratio of the time spent by the solute in the stationary phase to the time spent in the mobile phase.
+- **Selectivity Factor:**
+- **Chromatographic Resolution (Rs):**
+
+-------------------------------------------
+# **Gas Chromatography**
+- There are two major types of GC columns:
+	1. **Capillary:** hollow tube with stationary phase along interior wall surface, either coated, on particles etc.
+	2. **Packed:** (not common) shorter (1-3 m), have a large diameter (2-4 mm), coiled glass or stainless steel tube filled with particles containing the stationary phase (solid or liquid that is coated on the inert solid)
+
+-----------------------------------------------
+# **Difference between flow rate *F* & linear velocity, *u***
+
+-----------------------------------------------------------
+# **van Deemter Equation**
+- In the equation:
+	- *A term:* eddy diffusion: spreading of analyte molecules because they have to around stationary phase particles
+	- *B term:* longitudinal dispersion: band broadening along the length of the column that is caused due to the 
+	- *C term:* mass transfer kinetics
+- All 3 coefficients describe the major factors affecting band broadening & therefore column efficiency
+- These terms contribute to the number of theoretical plates *N*
+- **?** controls magnitude
+- 
+
+-------------------------------------------------
 # **Detectors**
 - Know how they work
 - It's features
