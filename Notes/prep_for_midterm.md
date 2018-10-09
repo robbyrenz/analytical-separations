@@ -24,7 +24,8 @@
 
 -----------------------------------------------
 # **Difference between flow rate *F* & linear velocity, *u***
-
+- ***Volume Flow Rate:*** volume of solvent per unit time traveling through the column
+- ***Linear Flow Rate:*** distance per unit time traveled by solvent
 -----------------------------------------------------------
 # **van Deemter Equation**
 - In the equation:
