@@ -1,4 +1,10 @@
-# Ignoring files LaTeX makes automatically when compiling
+# ignoring files LaTeX makes automatically when compiling
 *.aux
 *.log
+
+# ignoring files LaTeX makes when using biber/biblatex
+*.bbl
+*.bcf
+*.blg
+*.run.xml
 
