@@ -1,0 +1,4 @@
+# Ignoring files LaTeX makes automatically when compiling
+*.aux
+*.log
+
