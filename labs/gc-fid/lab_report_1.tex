@@ -7,7 +7,8 @@
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{amsmath} % Required for some math elements 
 \usepackage{times} % Uncomment to use the Times New Roman font
-\usepackage[backend=biber, style=draft, citestyle=chem-acs, sorting=none]{biblatex}
+\usepackage[backend=biber, style=chem-acs, citestyle=chem-acs, sorting=none]{biblatex}
+\setlength{\parskip}{1em}
 \addbibresource{sample.bib}
 
 %----------------------------------------------------------------------------------------
@@ -38,8 +39,9 @@ Lab Instructor: & Kevin Stroski % Instructor/supervisor
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-	
-	The main objective of this experiment was to separate polycyclic aromatic hydrocarbons (PAHs). This was done with the help of a gas chromatography equipped with a flame ionization detector \cite{Smith:2012qr}. Also, check out the this citation \cite{pah-in-soil}.
+The main objective of this experiment was to separate polynuclear aromatic hydrocarbons (PAHs). This was done with the help of a gas chromatography equipped with a flame ionization detector \cite{Smith:2012qr}. Also, check out the this citation \cite{pah-in-soil}.
+
+This is working!!! I am the King!!! I will live forever!!!
 \end{abstract}
 
 \newpage
@@ -51,6 +53,34 @@ Lab Instructor: & Kevin Stroski % Instructor/supervisor
 \section{Introduction}
 Separation is important and stuff.
 
+The main objective of this experiment is to separate polynuclear aromatic hydrocarbons (PAHs) with the help of a high resolution gas chromatography (GC) that is equipped with a flame ionization detector. The initial part of the experiment involves configuring the GC in order to get it ready for PAH analysis. In addition, the resolution of the GC was also optimized in order to get the best resolution possible for the resulting chromatogram. This part involves altering the temperature of the detector, injector and oven. Furthermore, solute focusing methods, like for instance, solvent effects or cold trapping, can be taken advantage of in order to increase the resolution of the chromatogram. These methods involve the stationary phase "trapping" the solutes while the solvent evaporates through the column. And when the temperature is high enough, the solutes are released and are free to be carried down the column by the carrier gas.
+
+In a typical gas chromatography (GC), the mobile phase, in which \ce{He} is most commonly used as the carrier gas, transports the gaseous analyte throughout the column. Furthermore, due to partitioning, the individual components are separated because of its interaction with the stationary phase, which can be either a solid or a nonvolatile liquid which is bonded on the inside of the column itself.
+
+One of the detectors that is available for the GC is called the flame ionization detector (FID). The type of detector works best when the carrier gas is \ce{N2} as it greatly decreases its detection limit, compared to \ce{He}. In addition, the FID is sensitive to most hydrocarbons, making it the ideal detector to use where PAHs are concerned.
+
+PAHs are their own sub-group consisting of three or more fused and unsubstituted aromatic rings, although naphthalene is also considered a PAH, even though it has only two fused rings. Despite the fact that PAHs are present in plant matter and in petroleum, they are also considered contaminants. These class of compounds are also formed during the incomplete combustion of certain organic compounds, as well as in forest fires. Thus, there is a great importance of tracking, measuring and separating these concentrations of PAHs.
+
+The last part of this experiment involves running simulations to get the best possible chromatogram. This is done with the help of a software called GC-SOS\textsuperscript{\textregistered}, and by altering  the temperature conditions. The retention times, peak amplitudes and peak widths are monitored until a satisfying chromatogram is simulated, and the best overall program has been determined.
+
+A useful equation to find the resolution with the help of widths at the bases of the peaks is given by:
+\begin{equation} \label{resolution_equ}
+    R = \frac{21't_r}{w_{b_1} + w_{b_2}}
+\end{equation}
+where \(t_r\) denotes the retention time of the corresponding peak.
+\begin{equation} \label{n_equ}
+    N = 5.545\Bigg(\frac{t_r}{w_\frac{1}{2}}\Bigg)^2 = 16\Bigg(\frac{t_r}{w_b}\Bigg)^2
+\end{equation}
+In equation \ref{n_equ}, \(N\) represents the number of plates, theoretically speaking; \(w_\frac{1}{2}\) and \(w_b\) are the widths of the peak at half-height and at the base, respectively. As a result, equation \ref{n_equ} ultimately simplifies to the following equation:
+\begin{equation} \label{rel_equ}
+    w_b = 1.699w_\frac{1}{2}
+\end{equation}
+Futhermore, equation \ref{rel_equ} proves that there exists a direct relationship between \(w_\frac{1}{2}\) and \(w_b\). Appropriately, the resolution can also be calculated by the half-heights of the widths of the peaks like so:
+\begin{equation} \label{another_resolution_equ}
+    R = \frac{21't_r}{1.699\Big(w_{\frac{1}{2}}^1 + w_{\frac{1}{2}}^2\Big)}
+\end{equation}
+However, equation \ref{another_resolution_equ} can only be used for peaks of similar heights.
+
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
@@ -59,9 +89,11 @@ Separation is important and stuff.
 
 \begin{description}
 	\item[First Objective] \hfill \\
-	Making the solution.
+	Optimize and assess vital GC parameters for the separation of PAHs with the help of high resolution gas chromatography.
 	\item[Second Objective] \hfill \\
-	Running the GC-FID.
+	Finding out the plate height as well as the number of theoretical plates for peak 7 in the chromatogram of PAH mixture.
+	\item[Third Objective] \hfill \\
+	Determining the resolution of peaks 5 and 6 in the chromatogram of PAH mixture
 \end{description}
  
 %----------------------------------------------------------------------------------------
@@ -69,7 +101,9 @@ Separation is important and stuff.
 %----------------------------------------------------------------------------------------
 
 \section{Methods and Instrumentation}
-The gas chromatography, equipped with the flame ionisation detector, was the instrument used to separate the PAH's.
+The analysis of the PAH mixture was performed on a Agilent 7890A gas chromatograph, which was equipped with an FID. Before each analysis, the apparatus was left on standby so that the flame was able to reach the desired temperature for that particular analysis. In addition, each analysis was conducted with the injection mode at splitless and the carrier gas was \ce{He}?
+
+For the first method, the oven temperature was held at \textit{something}\ldots
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5
@@ -89,6 +123,42 @@ The gas chromatography, equipped with the flame ionisation detector, was the ins
 %----------------------------------------------------------------------------------------
 
 \section{Appendix}
+
+\subsection{Calculations}
+
+\begin{itemize}
+	\item Mass required to make \textbf{\SI{10}{mL}} of \SI{1}{\frac{mg}{mL}} (\SI{1000}{ppm}) naphthalene in toulene
+
+	Calculation is here.
+
+	\item Determining the plate height for peak 7
+
+	Calculation is here.
+
+	\item Determining the number of theoretical plates for peak 7
+
+	Calculation is here.
+
+	\item Determining the resolution for the pair of peaks 5 and 6
+
+	Final calculation is here.
+\end{itemize}
+
+\begin{description}
+	\item[Mass required to make \textbf{\SI{10}{mL}} of \SI{1}{\frac{mg}{mL}} (\SI{1000}{ppm}) naphthalene in toulene] \hfill \\
+	Calculation is here.
+	\item[Determining the plate height for peak 7] \hfill \\
+	Calculation is here.
+	\item[Determining the number of theoretical plates for peak 7] \hfill \\
+	Calculation is here.
+	\item[Determining the resolution for the pair of peaks 5 and 6] \hfill \\
+	Calculation is here.
+\end{description}
+
+
+\subsection{Chromatograms}
+There are ? pages of chromatograms that were collected during this experiment.
+
 
 %----------------------------------------------------------------------------------------
 
