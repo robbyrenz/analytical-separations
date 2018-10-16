@@ -15,7 +15,7 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Determination of Optimized Parameters for the Separation of PAHs using Gas Chromatography \\ CHEM 4303 \\ Analytical Separations} % Title
+\title{Determination of Optimized Parameters for the Separation of PAHs using GC \\ CHEM 4303 \\ Analytical Separations} % Title
 
 \author{Robby \textsc{Renz}} % Author name
 
@@ -39,7 +39,11 @@ Lab Instructor: & Kevin Stroski % Instructor/supervisor
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-	The main objective of this experiment was to modify the parameters of a GC-FID in order to efficiently separate a mixture of PAHs, that is, an appropriate resolution was achieved between the peaks. This was done \textbf{DELETE ->} with the help of a gas chromatography equipped with a flame ionization detector \cite{harris_quantitative_2010}. Also, check out the this citation \cite{pah-in-soil}.
+PAHs are contaminants due to their toxicity, and so there is a need to separate a mixture of them, efficiently, in order to accurately identify them in a chromatogram. This experiment involves attempting to design an optimized set of parameters for a GC-FID method so that the peaks of the PAH in the chromatogram are well spaced, and was analyzed in under an hour. Two methods were run on the PAH mixture; in the first method 
+
+The computational part of this experiment involves running simulations to get the best possible chromatogram. This is done with the help of a software called GC-SOS\textsuperscript{\textregistered} by altering  the temperature conditions of the column. The retention times, peak amplitudes and peak widths are monitored until a satisfying chromatogram is simulated, (in which the time and resolution between the peaks had to be compromised).
+
+The number of theoretical plates for peak 7 (fluoranthene) was calculated to be \SI{193025}{plates}, and its plate height was \SI{1}{m}. And the resolution of peaks 5 and 6 (phenanthrene and anthracene, respectively) was calculated to be \num{1}.
 
 \end{abstract}
 
@@ -50,35 +54,11 @@ Lab Instructor: & Kevin Stroski % Instructor/supervisor
 %----------------------------------------------------------------------------------------
 
 \section{Introduction}
-Separation is important and stuff.
+Polynuclear aromatic hydrocarbons (PAHs) are a class of contaminants in which its structure consists of one or more carbonylic oxygen(s) bonded to an aromatic ring structure \cite{sft-pah}. There is an importance of tracking, separating and identifying these PAHs in the environment as they have the reputation of being mutagenic and toxic \cite{sft-pah}, as well as carcinogenic, including its derivatives \cite{iupac-pah}. In particular, the most carcinogenic of the PAH is considered to be the benzo[$\alpha$]pyrene (BaP) \cite{coffee-pah}, and is one of 16 PAHs \cite{iupac-pah} that are especially kept track of, and these 16 PAHs are often known as "priority PAHs" \cite{sft-pah}.
 
-The main objective of this experiment is to separate polynuclear aromatic hydrocarbons (PAHs) with the help of a high resolution gas chromatography (GC) that is equipped with a flame ionization detector. The initial part of the experiment involves setting up the parameters of the GC and repeatedly analyzing naphthalene twice and toluene so that the reproducibility of the GC has been established. In addition, the resolution of the GC was also optimized in order to get the best resolution possible for the resulting chromatogram. This part involves altering the temperature of the detector, injector and oven. Furthermore, solute focusing methods, like for instance, solvent effects or cold trapping, can be taken advantage of in order to increase the resolution of the chromatogram. These methods involve the stationary phase "trapping" the solutes while the solvent evaporates through the column. And when the temperature is high enough, the solutes are released and are free to be carried down the column by the carrier gas.
+A flame ionization detector (FID) is the most common detector for a GC \cite{sparkman_gas_2011}, and it is used for detecting organic compounds \cite{vitha_chromatography:_2017}. This is because is responds well to compounds that have carbon-hydrogen bond \cite{sparkman_gas_2011}. The main reason for this response is that as the solutes pass through a flame in the FID, they burn and consequently produce ions and electrons, which eventually causes a current to flow \cite{sparkman_gas_2011}. This current is processed in order to form a chromatogram \cite{vitha_chromatography:_2017}. And the ions that are created are, for the most part, formed by the breaking of \ce{C-H} bonds \cite{vitha_chromatography:_2017}. This is why FID are excellent as organic detectors. In addition, this type of detector works best when the carrier gas is \ce{N2} as it greatly decreases its detection limit, compared to \ce{He} \cite{harris_quantitative_2010}.
 
-In a typical GC, the mobile phase, in which \ce{He} is most commonly used as the carrier gas, transports the gaseous analyte throughout the column. Furthermore, due to partitioning, the individual components are separated because of its interaction with the stationary phase, which can be either a solid or a nonvolatile liquid which is bonded on the inside of the column itself.
-
-One of the detectors that is available for the GC is called the flame ionization detector (FID). The type of detector works best when the carrier gas is \ce{N2} as it greatly decreases its detection limit, compared to \ce{He}. In addition, the FID is sensitive to most hydrocarbons, making it the ideal detector to use where PAHs are concerned.
-
-PAHs are their own sub-group consisting of three or more fused and unsubstituted aromatic rings, although naphthalene is also considered a PAH, even though it has only two fused rings. Despite the fact that PAHs are present in plant matter and in petroleum, they are also considered contaminants. These class of compounds are also formed during the incomplete combustion of certain organic compounds, as well as in forest fires. Thus, there is a great importance of tracking, measuring and separating these concentrations of PAHs.
-
-The last part of this experiment involves running simulations to get the best possible chromatogram. This is done with the help of a software called GC-SOS\textsuperscript{\textregistered}, and by altering  the temperature conditions. The retention times, peak amplitudes and peak widths are monitored until a satisfying chromatogram is simulated, and the best overall program has been determined.
-
-A useful equation to find the resolution with the help of widths at the bases of the peaks is given by:
-\begin{equation} \label{resolution_equ}
-    R = \frac{21't_r}{w_{b_1} + w_{b_2}}
-\end{equation}
-where \(t_r\) denotes the retention time of the corresponding peak.
-\begin{equation} \label{n_equ}
-    N = 5.545\Bigg(\frac{t_r}{w_\frac{1}{2}}\Bigg)^2 = 16\Bigg(\frac{t_r}{w_b}\Bigg)^2
-\end{equation}
-In equation \ref{n_equ}, \(N\) represents the number of plates, theoretically speaking; \(w_\frac{1}{2}\) and \(w_b\) are the widths of the peak at half-height and at the base, respectively. As a result, equation \ref{n_equ} ultimately simplifies to the following equation:
-\begin{equation} \label{rel_equ}
-    w_b = 1.699w_\frac{1}{2}
-\end{equation}
-Futhermore, equation \ref{rel_equ} proves that there exists a direct relationship between \(w_\frac{1}{2}\) and \(w_b\). Appropriately, the resolution can also be calculated by the half-heights of the widths of the peaks like so:
-\begin{equation} \label{another_resolution_equ}
-    R = \frac{21't_r}{1.699\Big(w_{\frac{1}{2}}^1 + w_{\frac{1}{2}}^2\Big)}
-\end{equation}
-However, equation \ref{another_resolution_equ} can only be used for peaks of similar heights.
+Furthermore, cold trapping can be used to concentrate the solutes so that it will be able to give out sharp bands; note that this is only required with the splitless injection method as it the solutes enter column at a slow rate \cite{harris_quantitative_2010}.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -102,10 +82,17 @@ However, equation \ref{another_resolution_equ} can only be used for peaks of sim
 \section{Methods and Instrumentation}
 
 \subsection{Chemicals}
-Toulene (HPLC grade chemical, LOT: 591103-A6, CAS: 108-88-3), naphthalene (Fisher Scientific, LOT: 895861, CAS: 91-20-3), and a mixture of PAH (PAH mix 1, LOT w00382; PAH mix 2, CD-1661; Ultra EPA 2138N-1, EOA 2139N-1, ACN) were used in this experiment.
+Toluene (HPLC grade chemical, LOT: 591103-A6, CAS: 108-88-3), naphthalene (Fisher Scientific, LOT: 895861, CAS: 91-20-3), and a mixture of PAH (PAH mix 1, LOT w00382; PAH mix 2, CD-1661; Ultra EPA 2138N-1, EOA 2139N-1, ACN) were used in this experiment.
+
+The safety information for the aforementioned chemicals:
+\begin{description}
+	\item[Toluene] flammable, potential acute and chronic health effects.
+	\item[Naphthalene] flammable, toxic and carcinogenic.
+	\item[PAH mixture] flammable, can cause death, health hazard, can cause damage to the aquatic environment.
+\end{description}
 
 \subsection{Instrumentation}
-The analysis of the PAH mixture was performed on an Agilent 6890N Network GC System (by Agilent Technologies), equipped with an FID detector. Before each analysis, the apparatus was left on standby so that the flame was able to reach the desired temperature for that particular analysis. The separation was performed on an Agilent 122-5032 J\&W DB-5 capillary column, \SI{30}{m} length $\times$ \SI{0.25}{mm} i.d. $\times$ \SI{0.25}{\mu{}m} thickness, \SI{7}{inch} cage. Its stationary phase was 5$\%$-Phenyl)-methylpolysiloxane (DB-5) (citation needed?). In addition, each analysis was conducted with the injection mode at splitless and the carrier gas was \ce{He}?
+The analysis of the PAH mixture was performed on an Agilent 6890N Network GC System (by Agilent Technologies), equipped with an FID detector. Before each analysis, the apparatus was left on standby so that the flame was able to reach the desired temperature for that particular analysis. The separation was performed on an Agilent 122-5032 J\&W DB-5 capillary column, \SI{30}{m} length $\times$ \SI{0.25}{mm} i.d. $\times$ \SI{0.25}{\mu{}m} thickness, \SI{7}{inch} cage. Its stationary phase was 5$\%$ Phenyl/95$\%$ methylpolysiloxane (DB-5). In addition, each analysis was conducted with the injection mode at splitless and the carrier gas in the GC-FID was \ce{He}, with a flow rate of \SI{1}{\frac{mL}{min}}. The injector port temperature was set to \SI{260}{\degreeCelsius} and for the analyses of toluene and naphthalene, the detector temperature was set to \SI{280}{\degreeCelsius}, and it was increased to \SI{300}{\degreeCelsius} for the analyses of the PAH mixture.
 
 \subsection{Methods}
 Initially, analyses were performed on toluene once and then on naphthalene twice because the GC had to be set up and checked if the precision was up to standards before proceeding with the analyses of a mixture of PAH. The name of the method used for these analyses was ``RJWEEK1.M''. Hereafter, all the remaining separations were performed on this mixture.
@@ -114,7 +101,7 @@ For the first method, which was named ``RJ1WEEK2.M'', the oven temperature was i
 
 In the second method, named ``RJ2WEEK2.M'', the oven temperature was set at \ang{75}\si{C} for \SI{2}{min}, it was increased by \SI{5}{\frac{\degreeCelsius}{min}} all the way to \SI{300}{\degreeCelsius}; it was held at this temperature for 40 minutes. And the total runtime for the second method was \SI{87}{\minute}. 
 
-Just before setting the parameters for the final method, the GC-SOS\textsuperscript{\textregistered} was used to stimulate a separation of the PAH via gas chromatography, using parameters that was retrieved from the previous runs, including the two methods that were used on the PAH mixture (``RJ1WEEK2.M'' and ``RJ2WEEK2.M''). Through trial and error, it was realized that the optimum temperature conditions for the separation of the PAH mixture, comprimising between resolution and time taken, are as follows: the initial temperature was set to \SI{75}{\degreeCelsius}; it was held at this temperature for \SI{1}{min}; it was then increased at a rate of \SI{10}{\frac{\degreeCelsius}{min}} all the way to \SI{130}{\degreeCelsius}, and it was held at this temperature for \SI{25}{min}; finally, the temperature was again increased at a rate of \SI{12}{\frac{\degreeCelsius}{min}} until it peaked at \SI{250}{\degreeCelsius}, and it was held at this temperature for \SI{21}{min}. The simulated chromatogram, its temperature parameters, the column conditions and the retention data are all shown in Figure 7. These very same temperature conditions/parameters were set up into the method called "OPTRJ.M", and a final analysis was initiated on the PAH mixture.
+Just before setting the parameters for the final method, the GC-SOS\textsuperscript{\textregistered} software was used to simulate a separation of the PAH via gas chromatography, using parameters that was retrieved from the previous runs, including the two methods that were used on the PAH mixture (``RJ1WEEK2.M'' and ``RJ2WEEK2.M''). Through trial and error, it was realized that the optimum temperature conditions for the separation of the PAH mixture, comprimising between resolution and time taken, are as follows: the initial temperature was set to \SI{75}{\degreeCelsius}; it was held at this temperature for \SI{1}{min}; it was then increased at a rate of \SI{10}{\frac{\degreeCelsius}{min}} all the way to \SI{130}{\degreeCelsius}, and it was held at this temperature for \SI{25}{min}; finally, the temperature was again increased at a rate of \SI{12}{\frac{\degreeCelsius}{min}} until it peaked at \SI{250}{\degreeCelsius}, and it was held at this temperature for \SI{21}{min}. The simulated chromatogram, its temperature parameters, the column conditions and the retention data are all shown in Figure 7. These very same temperature conditions/parameters were set up into the method called "OPTRJ.M", and a final analysis was initiated on the PAH mixture.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5
@@ -123,11 +110,14 @@ Just before setting the parameters for the final method, the GC-SOS\textsuperscr
 \section{Results and Discussion}
 
 \subsection{Results}
-The chromatograms for the analyses of naphthalene and toulene are given in Figures 1, 2 (both are for naphthalene) and 3 (toluene), respectively. The integration results for the chromatogram of the analysis of the PAH mixture using the method ``RJ1WEEK2.M'' is shown in Table 1, while the chromatogram is shown in Figure 4. Also, the chromatogram for the second analysis of PAH using the method ``RJ2WEEK2.M'' is shown in Figure 5, and its integration results are shown in Table 2. Finally, the chromatogram for the optimized analysis of PAH (method name was ``OPTRJ.M'') is shown in Figure 6, and its integration results are shown in Table 3. Note that in each table, there are numbers that are encircled next to the peak number; this is to show which peak represents which hydrocarbon. The peaks that are not next to the numbers are considered noise. OK?
+The GC-FID chromatograms for the analyses of naphthalene and toluene are given in Figures 1, 2 (both are for naphthalene) and 3 (toluene), respectively. The integration results for the chromatogram of the analysis of the PAH mixture using the method ``RJ1WEEK2.M'' is shown in Table 1, while the chromatogram is shown in Figure 4. Also, the chromatogram for the second analysis of PAH using the method ``RJ2WEEK2.M'' is shown in Figure 5, and its integration results are shown in Table 2. Finally, the chromatogram for the optimized analysis of PAH (method name was ``OPTRJ.M'') is shown in Figure 6, and its integration results are shown in Table 3. Note that in each table, there are numbers that are encircled next to the peak number; this is to show which peak represents which hydrocarbon. Refer to Table 1 of \cite{sft-pah} under the PAHs section of the table to locate which peak number represents which hydrocarbon. The peaks that are not next to the numbers are considered noise and, thus, should be ignored.
 
 \subsection{Discussion}
+As it can be seen in Figure 4, when the initial temperature of the column was set to \SI{110}{\degreeCelsius}, the majority of the first \num{7} peaks are quite compact. This goes double for peaks \num{3} and \num{4}, and peaks \num{6} and \num{7}. Their retention times for these two pairs of peaks are quite close to each other (\SI{8.463}{min} and \SI{8.976}{min} for peaks \num{3} and \num{4}, and \SI{13.232}{min} and \SI{13.370}{min} for peaks \num{6} and \num{7}). However, in Figure \num{5} (the second GC-FID analysis of the PAH mixture), peaks \num{3} and \num{4} are resonable far apart; their retention times are \SI{17.872}{min} and \SI{18.736}{min}, respectively.
 
-In conclusion, blah blah blah \ldots
+However, in both of the aforementioned chromatograms, the pairs of peaks \num{6} and \num{7}, peaks \num{10} and \num{11}, and peaks \num{14} and \num{15} are all close to each other and are overlapping with each other. The optimized method ``OPTRJ.M'' was designed to get a good resolution out of these peaks while not sacrificing the time it would take for the GC-FID analysis to be completed. In the end, it was decided that an initial low temperature had to be set (\SI{75}{\degreeCelsius}) for cold trapping of the solutes to take place. Afterwards, after a minute, once it was decided that all of the rapid increase of temperature is 
+
+In conclusion, it can be seen that decreasing the temperature of the taking advantage of the cold trapping technique gives a much better chromatogram. Most of the peaks are away from each other 
 
 %----------------------------------------------------------------------------------------
 %	SECTION 6 (BIBLIOGRAPHY)
@@ -145,18 +135,17 @@ In conclusion, blah blah blah \ldots
 \subsection{Calculations}
 
 \begin{description}
-\item[Mass required to make \textbf{\SI{10}{mL}} of \SI{1}{\frac{mg}{mL}} (\SI{1000}{ppm}) naphthalene in toulene] \hfill \\
-	Note: 
+\item[Mass required to make \textbf{\SI{10}{mL}} of \SI{1}{\frac{mg}{mL}} (\SI{1000}{ppm}) naphthalene in toluene] \hfill \\
 \begin{gather*}
-\SI{1}{ppm} = \SI{1}{\frac{\mu}{mL}} = \SI{1}{\frac{mg}{L}} and \\
-\SI{1}{ppb} = \SI{1}{\frac{ng}{mL}} = \SI{1}{\frac{\mu}{L}} \\
-\\
-\\
+	\SI{1}{ppm} = \SI{1}{\frac{\mu}{mL}} = \SI{1}{\frac{mg}{L}} and \\
+	\SI{1}{ppb} = \SI{1}{\frac{ng}{mL}} = \SI{1}{\frac{\mu}{L}} \\
+	\\
+	\\
 	M_{r_{naphthalene}} = \SI{128.17}{g.mol^{-1}} \\
 	\SI{1}{\frac{mg}{mL}} = \SI{1}{g.L^{-1}} = \SI{0.001}{g.mL^{-1}} \\
-	Molarity = \frac{\SI{0.001}{g.mL^{-1}}}{\SI{128.17}{g.mol^{-1}}} \\
+	molarity = \frac{\SI{0.001}{g.mL^{-1}}}{\SI{128.17}{g.mol^{-1}}} \\
 	= \SI{7.8021e-6}{\frac{mol}{mL}} \\
-	moles = vol \times conc \\
+	moles = volume \times concentration \\
 	= \SI{10}{mL} \times \SI{7.8021e-6}{\frac{mol}{mL}} \\
 	= \SI{7.8021e-5}{mol} \\
 \end{gather*}
@@ -188,20 +177,32 @@ In conclusion, blah blah blah \ldots
 		H = \frac{L}{N}
 	\end{equation}
 
-		In equation \ref{plate:height}, $H$ represents plate height, $L$ represents the length of the column, and $N$ is the number of theoretical plates \cite{harris_quantitative_2010}.
+	In equation \ref{plate:height}, $H$ represents plate height, $L$ represents the length of the column, and $N$ is the number of theoretical plates \cite{harris_quantitative_2010}.
+
+	\begin{gather*}
+		H = \frac{\SI{30}{m}}{193024.8952} \\
+		H = \SI{1.5542e-4}{m} \approx \SI{1.55e-4}{m}
+	\end{gather*}
 
 \item[Determining the resolution for peaks 5 and 6] \hfill \\
-Peaks 5 and 6 were identified as phenanthrene and anthracene.
+	Peaks 5 and 6 were identified as phenanthrene and anthracene.
 
-\begin{equation} \label{resolution_equ}
-R = \frac{21't_r}{w_{b_1} + w_{b_2}}
-\end{equation}
+	\begin{equation} \label{resolution}
+		R = \frac{2 \times (t_{r,B} - t_{r,A})}{w_A + w_B}
+	\end{equation}
 
-\(t_r\) in equation \ref{resolution_equ} denotes the retention time of the corresponding peak.
+	Equation \ref{resolution} was referenced from \cite{vitha_chromatography:_2017}.
+
+	\begin{gather*}
+		R = \frac{2 \times (17.981 - 15.989)}{0.364 + 0.303} \\
+		R = \frac{3.984}{0.667} \\
+		R = 5.973 \approx 6
+	\end{gather*}
+
 \end{description}
 
 \subsection{Chromatograms}
-There are 10 pages of printouts that were collected during this experiment, 6 of which are chromatograms.
+There are 10 pages of printouts that were collected during this experiment, 6 of which are GC-FID chromatograms.
 
 
 %----------------------------------------------------------------------------------------
