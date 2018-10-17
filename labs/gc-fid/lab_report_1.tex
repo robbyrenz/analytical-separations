@@ -7,7 +7,7 @@
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{amsmath} % Required for some math elements 
 \usepackage{times} % Uncomment to use the Times New Roman font
-\usepackage[backend=biber, style=chem-acs, citestyle=chem-acs, sorting=none]{biblatex}
+\usepackage[backend=biber, bibencoding=utf8, style=chem-acs, citestyle=chem-acs, sorting=none]{biblatex}
 \setlength{\parskip}{1em}
 \addbibresource{sample.bib}
 
@@ -39,11 +39,7 @@ Lab Instructor: & Kevin Stroski % Instructor/supervisor
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-PAHs are contaminants due to their toxicity, and so there is a need to separate a mixture of them, efficiently, in order to accurately identify them in a chromatogram. This experiment involves attempting to design an optimized set of parameters for a GC-FID method so that the peaks of the PAH in the chromatogram are well spaced, and was analyzed in under an hour. Two methods were run on the PAH mixture; in the first method 
-
-The computational part of this experiment involves running simulations to get the best possible chromatogram. This is done with the help of a software called GC-SOS\textsuperscript{\textregistered} by altering  the temperature conditions of the column. The retention times, peak amplitudes and peak widths are monitored until a satisfying chromatogram is simulated, (in which the time and resolution between the peaks had to be compromised).
-
-The number of theoretical plates for peak 7 (fluoranthene) was calculated to be \SI{193025}{plates}, and its plate height was \SI{1}{m}. And the resolution of peaks 5 and 6 (phenanthrene and anthracene, respectively) was calculated to be \num{1}.
+PAHs are contaminants due to their toxicity, and so there is a need to separate a mixture of them, efficiently, in order to accurately identify them in a chromatogram. This experiment involves attempting to design an optimized set of parameters for a GC-FID method so that the peaks of the PAH in the chromatogram are well spaced, and was analyzed in under an hour. Two methods were run on the PAH mixture; in the first method, an initial low temperature was used, and in the second method, an initial higher temperature was utilized. From these two runs, an optimized method was designed with the help of a program. The computational part of this experiment involves running simulations to get the best possible chromatogram. This is done with the help of a software called GC-SOS\textsuperscript{\textregistered} by altering  the temperature conditions of the column. The retention times, peak amplitudes and peak widths are monitored until a satisfying chromatogram is simulated, (in which the time and resolution between the peaks had to be compromised). In the end, a viable chromatogram was achieved.
 
 \end{abstract}
 
@@ -115,9 +111,9 @@ The GC-FID chromatograms for the analyses of naphthalene and toluene are given i
 \subsection{Discussion}
 As it can be seen in Figure 4, when the initial temperature of the column was set to \SI{110}{\degreeCelsius}, the majority of the first \num{7} peaks are quite compact. This goes double for peaks \num{3} and \num{4}, and peaks \num{6} and \num{7}. Their retention times for these two pairs of peaks are quite close to each other (\SI{8.463}{min} and \SI{8.976}{min} for peaks \num{3} and \num{4}, and \SI{13.232}{min} and \SI{13.370}{min} for peaks \num{6} and \num{7}). However, in Figure \num{5} (the second GC-FID analysis of the PAH mixture), peaks \num{3} and \num{4} are resonable far apart; their retention times are \SI{17.872}{min} and \SI{18.736}{min}, respectively.
 
-However, in both of the aforementioned chromatograms, the pairs of peaks \num{6} and \num{7}, peaks \num{10} and \num{11}, and peaks \num{14} and \num{15} are all close to each other and are overlapping with each other. The optimized method ``OPTRJ.M'' was designed to get a good resolution out of these peaks while not sacrificing the time it would take for the GC-FID analysis to be completed. In the end, it was decided that an initial low temperature had to be set (\SI{75}{\degreeCelsius}) for cold trapping of the solutes to take place. Afterwards, after a minute, once it was decided that all of the rapid increase of temperature is 
+However, in both of the aforementioned chromatograms, the pairs of peaks \num{6} and \num{7}, peaks \num{10} and \num{11}, and peaks \num{14} and \num{15} are all close to each other and are overlapping with each other. The optimized method ``OPTRJ.M'' was designed to get a good resolution out of these peaks while not sacrificing the time it would take for the GC-FID analysis to be completed. In the end, it was decided that an initial low temperature had to be set (\SI{75}{\degreeCelsius}) for cold trapping of the solutes to take place. After a minute, the temperature was ramped up at a high rate to allow solutes to volatilize and travel through the column. This is known as cold trapping \cite{harris_quantitative_2010}, and this porduced a much better chromatogram.
 
-In conclusion, it can be seen that decreasing the temperature of the taking advantage of the cold trapping technique gives a much better chromatogram. Most of the peaks are away from each other 
+In conclusion, it can be seen that decreasing the initial temperature of the column oven in order to take advantage of the cold trapping technique gives a much better chromatogram. Most of the peaks are distinguishable. In the future, more experiments can be undertaken in order to get a better separation at an even shorter time.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 6 (BIBLIOGRAPHY)
@@ -191,7 +187,7 @@ In conclusion, it can be seen that decreasing the temperature of the taking adva
 		R = \frac{2 \times (t_{r,B} - t_{r,A})}{w_A + w_B}
 	\end{equation}
 
-	Equation \ref{resolution} was referenced from \cite{vitha_chromatography:_2017}.
+	Equation \ref{resolution} was retrieved from \cite{vitha_chromatography:_2017}.
 
 	\begin{gather*}
 		R = \frac{2 \times (17.981 - 15.989)}{0.364 + 0.303} \\
