@@ -1,0 +1,129 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 12pt]{article}
+\usepackage[version=4]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{times} % Uncomment to use the Times New Roman font
+\usepackage[backend=biber, style=chem-acs, citestyle=chem-acs, sorting=none]{biblatex}
+\setlength{\parskip}{1em}
+\addbibresource{references.bib}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Separation and Analysis of Pharmaceuticals using RP-HPLC \\ CHEM 4303 \\ Analytical Separations} % Title
+
+\author{Robby \textsc{Renz}} % Author name
+
+\date{\today} % Date for the report
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+\begin{tabular}{l r}
+Date Performed: & October 16, 2018 \\ % Date the experiment was performed
+Date Completed: & October 30, 2018 \\
+Partner: & Jaya Roe \\ % Partner name
+Lab Instructor: & Kevin Stroski % Instructor/supervisor
+\end{tabular}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+	High-performance liquid chromatography is a separation technique blah blah blah \dots
+\end{abstract}
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+Write your epic introduction here.
+
+The main objectives of this experiment is to \ldots{}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+
+\section{Methods and Instrumentation}
+
+\subsection{Chemicals}
+Toluene (HPLC grade chemical, LOT: 591103-A6, CAS: 108-88-3), naphthalene (Fisher Scientific, LOT: 895861, CAS: 91-20-3), and a mixture of PAH (PAH mix 1, LOT w00382; PAH mix 2, CD-1661; Ultra EPA 2138N-1, EOA 2139N-1, ACN) were used in this experiment.
+
+The safety information for the aforementioned chemicals: (this might not be needed...)
+\begin{description}
+	\item[Toluene] flammable, potential acute and chronic health effects.
+	\item[Naphthalene] flammable, toxic and carcinogenic.
+	\item[PAH mixture] flammable, can cause death, health hazard, can cause damage to the aquatic environment.
+\end{description}
+
+\subsection{Instrumentation}
+The separation and analysis of the pharmaceutical mixture was performed on an Agilent 6890N Network GC System (Agilent Technologies), equipped with an dash detector. The separation was performed on an Agilent(?) 122-5032 J\&W DB-5 capillary column, \SI{30}{m} length $\times$ \SI{0.25}{mm} i.d. $\times$ \SI{0.25}{\mu{}m} thickness, \SI{7}{inch} cage. Its stationary phase was 5$\%$ Phenyl/95$\%$ methylpolysiloxane (DB-5). In addition, each analysis was conducted with the injection mode at splitless and the carrier gas in the GC-FID was \ce{He}, with a flow rate of \SI{1}{\frac{mL}{min}}. The injector port temperature was set to \SI{260}{\degreeCelsius} and for the analyses of toluene and naphthalene, the detector temperature was set to \SI{280}{\degreeCelsius}, and it was increased to \SI{300}{\degreeCelsius} for the analyses of the pharmaceutical mixture and the standards.
+
+\subsection{Methods}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+
+\section{Results and Discussion}
+
+\subsection{Results}
+Write your results here\ldots
+
+
+\subsection{Discussion}
+Write your discussion here\dots
+
+The reason for using internal standards and not standard addition for calculating the concentration of the unknown analyte is that internal standards are preferred when give an accurate answer when 
+
+In conclusion\dots
+
+%----------------------------------------------------------------------------------------
+%	SECTION 5 (BIBLIOGRAPHY)
+%----------------------------------------------------------------------------------------
+
+\section{References}
+\printbibliography
+
+%----------------------------------------------------------------------------------------
+%	SECTION 6
+%----------------------------------------------------------------------------------------
+
+\section{Appendix}
+
+\subsection{Calculations}
+
+\begin{description}
+	\item[Calculating the response factor] \hfill \\
+		\begin{equation} \label{response-factor}
+		\begin{split}
+			\frac{\textit{Area of Analyte Signal}}{\textit{Concentration of Analyte}} & = F\Bigg(\frac{\textit{Area of Standard Signal}}{\textit{Concentration of Standard}}\Bigg) \\
+			\frac{A_X}{[X]} & = F\Bigg(\frac{A_S}{[S]}\Bigg)
+		\end{split}
+		\end{equation}
+			Equation \ref{response-factor} was taken from \cite{harris_quantitative_2010}, where $[X]$ and $[S]$ represent the concentrations of analyte and of the standard.
+\end{description}
+
+\subsection{Chromatograms}
+There are 50(?) pages of printouts that were collected during this experiment, 6 of which are GC-FID chromatograms.(?)
+
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
