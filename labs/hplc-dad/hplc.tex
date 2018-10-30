@@ -7,7 +7,7 @@
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{amsmath} % Required for some math elements 
 \usepackage{times} % Uncomment to use the Times New Roman font
-\usepackage[backend=biber, style=chem-acs, citestyle=chem-acs, sorting=none]{biblatex}
+\usepackage[backend=biber, bibencoding=utf-8, style=chem-acs, citestyle=chem-acs, sorting=none]{biblatex}
 \setlength{\parskip}{1em}
 \addbibresource{references.bib}
 \usepackage{geometry}
@@ -50,7 +50,9 @@ Lab Instructor: & Kevin Stroski % Instructor/supervisor
 %----------------------------------------------------------------------------------------
 
 \section{Introduction}
-Write your epic introduction here.
+High performance liquid chromatography (HPLC) is a type of chromatographic technique in which this instrumentation uses high pressure in order to push the solvent through the column \cite{harris}. In an HPLC, the stationary phase is usually inorganic particles that are made up of silica that are porous, and the type of chromatographic techniques that utilizes this type of stationary phase are normal phase (NP), ion pair, and reversed phase (RP) \cite{mold}. While NP chromatography is usually utilized in the purification of organic molecules, RP is used to purify proteins that are dissolved in organic solvents and aqueous buffers and the adsorption between the stationary phase and the solute becomes unhinged with the increase in concentration of the aforementioned solvent \cite{prep_hplc}. In RP, the solvent is less polar than the stationary phase but has the higher eluent strength \cite{harris}. 
+
+Acetaminophen (APAP), an antipyretic and a famous analgesic for humans, is known to cause poisons in cats and dogs \cite{dogs-cats}. And para-Aminophenol (PAP), an APAP metabolite, is a known nephrotoxicant for rats \cite{rats}. Thus, there is a need to separate as well as analyze these pharmaceutical components, and that is the main purpose of this experiment. And this is done with an RP-HPLC.
 
 The main objectives of this experiment is to \ldots{}
 
@@ -116,7 +118,7 @@ In conclusion\dots
 			\frac{A_X}{[X]} & = F\Bigg(\frac{A_S}{[S]}\Bigg)
 		\end{split}
 		\end{equation}
-			Equation \ref{response-factor} was taken from \cite{harris_quantitative_2010}, where $[X]$ and $[S]$ represent the concentrations of analyte and of the standard.
+			Equation \ref{response-factor} was taken from \cite{harris}, where $[X]$ and $[S]$ represent the concentrations of analyte and of the standard.
 \end{description}
 
 \subsection{Chromatograms}
