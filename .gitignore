@@ -8,4 +8,6 @@
 *.blg
 *.run.xml
 *.synctex.gz
+*.lof
+*.lot
 
