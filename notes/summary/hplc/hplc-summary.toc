@@ -1,10 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {2}Scope of HPLC}{3}
-\contentsline {section}{\numberline {3}Column Efficiency in HPLC}{3}
-\contentsline {section}{\numberline {4}Pumps}{3}
-\contentsline {section}{\numberline {5}Elution Techniques}{3}
-\contentsline {section}{\numberline {6}Injectors}{3}
-\contentsline {section}{\numberline {7}Columns}{3}
-\contentsline {section}{\numberline {8}Detectors}{3}
-\contentsline {section}{\numberline {9}Types of Chromatography in HPLC}{3}
+\contentsline {section}{\numberline {3}Column Efficiency in HPLC}{4}
+\contentsline {section}{\numberline {4}Pumps}{4}
+\contentsline {section}{\numberline {5}Elution Techniques}{4}
+\contentsline {section}{\numberline {6}Injectors}{4}
+\contentsline {section}{\numberline {7}Columns}{4}
+\contentsline {section}{\numberline {8}Detectors}{4}
+\contentsline {section}{\numberline {9}Types of Chromatography in HPLC}{4}
