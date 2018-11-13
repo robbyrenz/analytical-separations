@@ -53,9 +53,13 @@ Lab Instructor: & Kevin Stroski % Instructor/supervisor
 %----------------------------------------------------------------------------------------
 
 \section{Introduction}
-High performance liquid chromatography (HPLC) is a type of chromatographic technique in which this instrumentation uses high pressure in order to push the solvent through the column \cite{harris}. In an HPLC, the stationary phase is usually inorganic particles that are made up of silica that are porous, and the type of chromatographic techniques that utilizes this type of stationary phase are normal phase (NP), ion pair, and reversed phase (RP) \cite{mold}. While NP chromatography is usually utilized in the purification of organic molecules, RP is used to purify proteins that are dissolved in organic solvents and aqueous buffers and the adsorption between the stationary phase and the solute becomes unhinged with the increase in concentration of the aforementioned solvent \cite{prep_hplc}. In RP, the solvent is less polar than the stationary phase but has the higher eluent strength \cite{harris}. 
+High performance liquid chromatography (HPLC) is a type of chromatographic technique which utilizes high pressure to push the solvent through the column \cite{harris}. In an HPLC, the stationary phase is usually inorganic particles that are made up of silica particles that are microporous \cite{harris}. The type of chromatographic techniques that utilizes this type of stationary phase are normal phase, ion pair, and reversed phase \cite{mold}. Furthermore, one would choose liquid chromatography over gas chromatography for the sole purpose of the analyte in question being not volatile enough to actually undergo gas chromatography \cite{harris}.
 
-Acetaminophen (APAP), an antipyretic and a famous analgesic for humans, is known to cause poisons in cats and dogs \cite{dogs-cats}. And para-Aminophenol (PAP), an APAP metabolite, is a known nephrotoxicant for rats \cite{rats}. Thus, there is a need to separate as well as analyze these pharmaceutical components, and that is the main purpose of this experiment. And this is done with an RP-HPLC.
+In normal phase chromatography, the stationary phase is more polar than the solvent \cite{harris}. However, in reversed phase chromatography, its the exact opposite; the solvent is more polar than the stationary phase \cite{harris}. In reverse phase HPLC, or RP-HPLC, the stationary phase is silica coated with \ce{C18} that acts as a surface \cite{fanali_liquid_2013}. One main advantage of reverse phase over normal phase is that the separation is more reproducible and robust \cite{fanali_liquid_2013}.
+
+In terms of detectors, there are numerous ones that are available for the HPLC. The most commonly used detectors are the ultraviolet-visible detectors and mass spectrometers \cite{vitha_chromatography:_2017}. However, in this experiment, the diode array detector (DAD) is utilized, which is actually a type of UV-visible detector \cite{vitha_chromatography:_2017}. This detector consists of two lamps (tungsten-halogen lamp and a deuterium lamp) that is able to produce electromagnetic radiation, which shine onto a detector array, and its continuously recorded  \cite{vitha_chromatography:_2017}. That way, if its disturbed by the flow of the analyte, the disturbance gets recorded due to the difference in absorption properties \cite{vitha_chromatography:_2017}. This is how it is able to detect analytes.
+
+Acetaminophen, an antipyretic and an analgesic for humans, is known to cause poisons in cats and dogs \cite{dogs-cats}.
 
 There were three main objectives in this experiment; in the first week, the purpose was to test the efficiency of separations in RP-HPLC by varying the composition of the mobile phase (methanol). In the qualitative part of the experiment, the purpose was to identify the types of compounds present in an unknown pharmaceutical mixture. Finally, in the quantitative part of the experiment, the purpose was to find out the mass of one of the drugs present in the aforementioned unknown pharmaceutical mixture.
 
@@ -85,7 +89,7 @@ Finally, in the qualitative part of the experiment, a series of calibration solu
 \section{Results and Discussion}
 
 \subsection{Results}
-As stated earlier, in the first week of the experiment, the compositions of the mobile phase, methanol, was being varied with HPLC-grade water in order to notice the differences in separations in RP-HPLC. The corresponding chromatograms are given in the appendix (figures 1 to 4), and tables \ref{tab-tab-cf-benzaldehyde}, \ref{tab-cf-nitrobenzene} and \ref{tab-cf-chlorobenzene} summarizes the aforementioned chromatograms in terms of its capacity factors.
+As stated earlier, in the first week of the experiment, the compositions of the mobile phase, methanol, was being varied with HPLC-grade water in order to notice the differences in separations in RP-HPLC. The corresponding chromatograms are given in the appendix (figures 1 to 4), and tables \ref{tab-cf-benzaldehyde}, \ref{tab-cf-nitrobenzene} and \ref{tab-cf-chlorobenzene} summarizes the aforementioned chromatograms in terms of its capacity factors. In addition, figure \ref{fig-capacity-factors} illustrates the log of the capacity factors of the three compounds as a function of the polarity of methanoly, and table \ref{tab-selectivity} shows how the selectivity factor ($\alpha$) varies with the polarity of methanol.
 
 \begin{table}[h!]
 	\centering
@@ -138,16 +142,12 @@ As stated earlier, in the first week of the experiment, the compositions of the 
 	\label{tab-cf-chlorobenzene}
 \end{table}
 
-Figure \ref{fig-capacity-factors} illustrates the log of the capacity factors of the three compounds as a function of the polarity of methanolly.
-
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\textwidth]{fig-capacity-2}
 	\caption{Plot of the Log k of benzaldehyde, nitrobenzene and chlorobenzene as a function of the polarity of methanol}
 	\label{fig-capacity-factors}
 \end{figure}
-
-Table \ref{tab-selectivity} now shows how the selectivity factor ($\alpha$) varies with the polarity of methanol.
 
 \begin{table}[h!]
 	\centering
@@ -174,11 +174,11 @@ In addition, figure 8 illustrates the chromatogram of the unknown pharmaceutical
 
 Finally, in the quantitative analysis of the experiment, figures 13, 14, 15, 16 and 17 represent the chromatograms \dots{}. Figures 18 and 19 show the chromatograms of the analysis of the aforementioned pharmaceutical unknown. Finally, figures 20, 21 and 22 represents the chromatograms of the blank that was run (50\% methanol).
 
-The pressure of the column(?) for each analysis is shown in table \ref{tab-pressure}. Note that the figure headings correspond to the analysis of the chromatograms in the appendix.
+The pressure of the column for each analysis is shown in table \ref{tab-pressure}. Note that the figure headings correspond to the analysis of the chromatograms in the appendix.
 
 \begin{table}[h!]
 	\centering
-	\caption{Table that tabulates how the pressure changes with each analysis. The figure number references the chromatogram in the appendix.}
+	\caption{Table that tabulates how the pressure of the column changes with each analysis. The figure number references the chromatogram in the appendix.}
 	\begin{tabular}{|c|c|}
 		\hline
 		Figure number & Pressure/bar\\
@@ -207,25 +207,25 @@ The pressure of the column(?) for each analysis is shown in table \ref{tab-press
 		\hline
 		Figure 12 & 178 \\
 		\hline
-		Figure 13 & \\
+		Figure 13 & 174 \\
 		\hline
-		Figure 14 & \\
+		Figure 14 & 174 \\
 		\hline
-		Figure 15 & \\
+		Figure 15 & 174 \\
 		\hline
-		Figure 16 & \\
+		Figure 16 & 174 \\
 		\hline
-		Figure 17 & \\
+		Figure 17 & 174 \\
 		\hline
-		Figure 18 & \\
+		Figure 18 & 174 \\
 		\hline
-		Figure 19 & \\
+		Figure 19 & 174 \\
 		\hline
-		Figure 20 & \\
+		Figure 20 & 174 \\
 		\hline
-		Figure 21 & \\
+		Figure 21 & 174 \\
 		\hline
-		Figure 22 &  \\ 
+		Figure 22 & 174 \\ 
 		\hline
 	\end{tabular}
 	\label{tab-pressure}
@@ -236,9 +236,12 @@ The pressure of the column(?) for each analysis is shown in table \ref{tab-press
 \subsection{Discussion}
 Give a reason as to why reverse-phase is used as a separation technique and not normal phase.
 
-Maybe state why the pressure increases as the polarity of the mobile phase increases. Hint: its because of the hydrogen bonding of the water molecules, hence a larger pressure is needed to push it through the column.
+In the quantitative identification of the pharmaceutical unknown mixture, the initial concentration of the mobile phase was chosen as 50\% methanol, and based on the chromatogram received, this composition was considered to be desirable for the analysis of the aforementioned unknown mixture. This was based on the resolution and the retention time for each peaks.
 
-In the quantitative identification of the pharmaceutical unknown mixture, the initial concentration of the mobile phase was chosen as 50\% methanol, and based on the chromatogram received, this composition was considered to be desirable for the analysis of the aforementioned unknown mixture. This was based on the resolution of the peaks and the retention time for each peaks.
+Tables \ref{tab-cf-benzaldehyde}, \ref{tab-cf-nitrobenzene} and \ref{tab-cf-chlorobenzene}, and figure \ref{fig-capacity-factors} clearly show that the capacity factor increases as the percentage of methanol decreases (that is, the polarity of methanol increases). Capacity factor, also known as retention factor \cite{harris}, denotes the time required for the analyte in question to elute \cite{harris}. A greater capacity factor indicates that it is greatly attracted to the column, interacting with the stationary phase \cite{harris}. Therefore, one can conclude that, as it can be clearly seen in figure 4, benzaldehyde is the most polar while chlorobenzene is the least polar of the three compounds; as stated earlier, in RP chromatography, the solvent is more polar than the stationary phase \cite{harris}.
+
+As it can be seen in table \ref{tab-pressure}, the pressure increases whenever the polarity of the mobile phase, in this case methanol, increases (by the addition of water). This is because as one increases the amount of water in the solvent, it increases the viscosity of the solvent, so a higher pressure is required to maintain the flow rate \cite{harris}.
+
 
 The reason for using internal standards and not standard addition for calculating the concentration of the unknown analyte is that internal standards are preferred when give an accurate answer when 
 
