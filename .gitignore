@@ -12,3 +12,7 @@
 *.lot
 *.toc
 
+# ignoring files that end with a ~ and .swp extension
+*~
+*.swp
+
