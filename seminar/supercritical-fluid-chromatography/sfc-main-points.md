@@ -45,3 +45,7 @@
 - talk about how to increase elution strength, and compare it as to how you would do it in a GC and LC.
 - talk about how you know that people prefer GC over LC, unless the solute is non-volatile, and state when would people really prefer SFC over GC.
 
+# Pics to include
+- CO2 phase diagram
+- 
+
