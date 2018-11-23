@@ -16,3 +16,6 @@
 *~
 *.swp
 
+# ignoring the primer pdf file about SFC
+sfc-primer.pdf
+
