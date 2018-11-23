@@ -50,22 +50,38 @@
 - Schematic of a SFC
 
 # Blueprint of my Presentation
-- Open up with a joke
-- Explain what SFC is in a nutshell
+## open up with a joke or two
+## Explain what SFC is in a nutshell
     - Supercritical fluid chromatography (SFC for short) is chromatography in which the mobile phase is a supercritical fluid.
     - In most circumstances, the mobile phase chosen is CO2.
     - SFC is extremely similar to high performance liquid chromatography, or HPLC for short, in terms of its equipment/instrumentation as well as the software used.
     - In fact, the hardware can be used to rapidly switch back and forth between SFC and either normal or reversed phase HPLC, in just a few minutes!
-- Explain what a supercritical fluid is, and reference the graph
+## Explain what a supercritical fluid is, and reference the graph
     - Its a phase that exists at only above a certain temperature, regardless of what the pressure is.
+    - critical point is the temperature at which only a single phase can exist.
+    - However, it is not recognized as a separate state of matter
+    - Just means a liquid can be converted to a gas and vice-versa without a phase transition.
+    - However, the conditions used are subcritical.
     - Its density and viscosity are between those of gas and liquid.
     - It has the ability to act as a solvent.
     - An example of a supercritical fluid is SF6 (sulfur hexafluoride), water, methanol, ammonia.
     - Basically, it moves like a gas but dissolves like a liquid, think of it like that
-- How does it work?
+## How does it work?
     - Explain the need for modifiers
-        - They do stuff
+	- major difference with SFC from HPLC is the fact that the mobile phase is a densed, compressed gas instead of a liquid.
+	- At extremly high pressures greater than 80 bar, CO2 acts like a solvent.
+	- CO2 is nonpolar solvent
+	- So for more polar solutes, an organic modifier (cosolvent), mostly alcohol, is added to the mobile phase.
+	- Gradient elution from low to high modifier concentration is the norm.
+	- Peaks elute from lower to higher polarity.
+	- However, for many highly polar solutes, interactions with stationary phase is too intense
+	- Consequence: solutes fail to elute, or elute with poor peak shape
+	- Solution: include a highly polar additive (strong acid or base) dissolved in the modifier.
     - Stationary phases for different circumstances
+	- for polar solutes
+	    - polar stationary phases are used bare silica or several ethylpyridines
+	- for nonpolar solutes
+	    - reversed-phase columns such as C18, C8, C4 and methyl are used.
     - Reference the figure 2 in your handouts and presentation
         - CO2 in its vapour phase is supplied from a cylinder at room temperature
         - The SFC conversion module contains a chiller
@@ -74,7 +90,9 @@
             - in it, the CO2 and the modifier is mixed in a compartment called a mixer
             - essentially, the job of the mixer is to homogenize the two solvents
         - something
-- Why should you care (As in, why use SFC and not just LC)?
+	- because the mobile phase is a compressed gas, the backpressure regulator is there in the system outlet to make sure that the CO2 is remains a single dense phase throughout the chromatograph.
+	- As a consequence, the detectors (UV) need to be able to be operated at high temperatures.
+## Why should you care (As in, why use SFC and not just LC)?
     - remember that LC is preferred over GC when
         - one wants to analyze thermally unstable compounds
         - one wants to analyze non-volatile compounds
@@ -90,3 +108,8 @@
         - when it is compressed, the resulting dense fluid acts like a solvent.
         - Yet, the intermolecular forces are still weak, despite the increased density.
         - So, other compounds dissolved in CO2 can diffuse rapidly through it.
+## Applications, including one detailed description, if you can
+- As a general rule, any compound soluble in methanol or a less polar solvent is a good candidate for separation by SFC.
+## A Summary
+- 
+
