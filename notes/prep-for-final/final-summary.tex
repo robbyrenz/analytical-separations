@@ -1,0 +1,97 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[version=4]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{amsmath} % Required for some math elements 
+% \usepackage{times} % Uncomment to use the Times New Roman font
+\usepackage[backend=biber, bibencoding=utf8, style=chem-acs, citestyle=chem-acs, sorting=none]{biblatex}
+\setlength{\parskip}{1em}
+% \addbibresource{references.bib}
+\author{Robby \textsc{Renz}}
+\title{A Summary of Analytical Separations}
+
+\begin{document}
+\maketitle
+\newpage
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+\section{High Performance Liquid Chromatography}
+
+\subsection{Introduction}
+\begin{itemize}
+	\item HPLC stands for "High Performance Liquid Chromatography" or "High Pressure Liquid Chromatography"
+	\item \textbf{Advantages}
+	\begin{itemize}
+		\item Analysis of thermally unstable compounds
+		\item Analysis of nonvolatile compounds
+	\end{itemize}
+	\item \textbf{Major requirement of LC}
+	\begin{itemize}
+		\item Solute solubility in mobile phase
+		\item This is in contrast to GC which require solute volatility
+	\end{itemize}
+\end{itemize}
+
+
+\subsection{Scope of HPLC}
+\begin{description}
+	\item[Adsorption chromatography (LSC)]
+	\item[Ion chromatography (IC)]
+	\item[Size-exclusion chromatography (SEC)]
+	\item[Partition chromatography] separation of analytes by partitioning, most commonly to a stationary phase bonded to a solid support \\ Note that this replaces liquid-liquid chromatography with its problems of stripping of stationary phase
+	\item[Hydrophobic interaction chromatography (HIC)] for separation of proteins without denaturation
+	\item[Hydrophilic interaction chromatography (HILIC)] for separation of very polar analytes
+	\item[Chiral chromatography]
+	\item[Affinity chromatography]
+\end{description}
+
+
+\subsection{Column Efficiency in HPLC}
+\begin{itemize}
+	\item Recall the van Deemter equation for GLC (commonly called GC) for packed columns:
+	\begin{equation}
+		H = A + \frac{B}{u} + Cu
+	\end{equation}
+	\item For longitudinal diffusion in LC, as the $D_l \approx 10^{-5}D_g$, the peak broadening due to longitudinal diffusion in mobile phase (liquid) phase in LC is \textit{negligible}.
+	\item i.e., $\frac{B}{u} = \frac{2\gamma{}D_m}{u}$
+\end{itemize}
+
+
+\subsection{Pumps}
+
+
+\subsection{Elution Techniques}
+
+
+\subsection{Injectors}
+
+
+\subsection{Columns}
+
+
+\subsection{Detectors}
+
+
+\subsection{Types of Chromatography in HPLC}
+
+
+\section{GC-MS}
+
+
+\section{Important Tips}
+
+\begin{description}
+	\item[Isocratic elution] one solvent, or constant solvent mixture.
+	\item[Gradient elution] continuous change of solvent composition to increase eluent strength. \\ Gradient elution in HPLC is analoguous to temperature programming in gas chromatography. \\ Increased eluent strength is required to elute more strongly retained solutes.
+	\item[General elution problem] for a complex mixture, isocratic conditions can often be found to produce adequate separation of early-eluting peaks or late-eluting peaks, but not both. This problem drives us to use gradient elution.
+	\item[Note:] Elution strength decreases as the solvent becomes more polar, correct???
+	\item[Separation factor, $\alpha$] Also called relative retention; for two components, 1 and 2, it is the ratio of their adjusted retention times. \\ The greater the relative retention, the greater the separation between two components. \\ Relative retention is fairly independent of flow rate and can therefore be used to to help identify peaks when the flow rate changes. (show equation?)
+\end{description}
+
+
+
+
+\end{document}
