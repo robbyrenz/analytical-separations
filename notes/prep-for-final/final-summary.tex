@@ -120,7 +120,60 @@ Solvents need to be HPLC or of similar high-grade for a stable baseline and to e
 \end{itemize}
 
 
-\subsection{Elution Techniques}
+\subsection{Elution}
+
+\begin{itemize}
+	\item Unlike GC, the mobile phase important in LC separations
+	\item Analyte molecules and solvent molecules can compete with each other for binding sites on the stationary phase 
+	\item The greater the mobile phase eluent strength, the more easily solvent molecules displace analyte molecules from the stationary phase
+	\begin{itemize}
+		\item A stronger mobile phase results in lower k and $t_r$
+	\end{itemize}
+	\item Layers of solvent at the interface affect separations
+	\begin{itemize}
+		\item e.g., for reversed phase separations, methanol forms a monolayer on a C18 surface, while acetonitrile forms a pool 1.3 nm deep into which analytes can dissolve with different binding energies.
+		\item Net result: acetonitrile is a stronger solvent than MeOH
+	\end{itemize}
+	\item The solvent choice also influences peak shape
+\end{itemize}
+
+\subsubsection{Elution Techniques}
+
+\begin{itemize}
+	\item Two major types of elution techniques in HPLC:
+	\begin{itemize}
+		\item Isocratic elution (one solvent)
+		\item elution with a mobile phase with an unchanging composition over course of separation
+		\begin{itemize}
+			\item e.g., 80/20 \ce{CH3OH}:\ce{H2O}, 50/50 \ce{CH3CN}:\ce{H2O}
+			\item Analogous to isothermal GC
+		\end{itemize}
+		\item Gradient elution
+		\item technique in which mobile phase composition gradually changed over course of separation
+		\begin{itemize}
+			\item Analogous to programmed temperature GC
+			\item Gradient can be ionic strength, pH, and/or organic modifier (e.g., \ce{CH3OH} in water)
+			\item Used to improve resolution and sensitivity
+			\item Done with proportioning valve in pump
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Factors to Consider in Gradient Elution}
+
+\begin{itemize}
+	\item Be sure that solvents are miscible in proportions used AND that solutes are soluble in all solvent compositions used during gradient elution
+	\item Column equilibration (i.e., solvent and stationary phase) is required prior to each injection, otherwise $k$ changes and $t_r$ is not reproducible
+	\begin{itemize}
+		\item Requires 10-20 column volumes, therefore expensive
+	\end{itemize}
+		\item Organics (usually phthalates) present in the water used as the solvent tend to interfere
+	\begin{itemize}
+		\item Concentrate at the head of the non-polar column, then elute as the organic modifier (e.g., \ce{CH3OH}) percentage increases
+		\item Limits sensitivity
+	\end{itemize}
+	\item Gradient elution less reproducible, more expensive than isocratic!
+\end{itemize}
 
 
 \subsection{Injectors}
