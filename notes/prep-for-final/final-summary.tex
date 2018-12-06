@@ -245,6 +245,136 @@ Learning objectives:
 
 \subsection{Detectors}
 
+\begin{itemize}
+	\item Detector selection based on analytes to be detected
+	\item Want a device that can provide a signal and operate in flow-through mode
+	\item A wide variety of HPLC detectors are available, with different applications, advantages, drawbacks, sensitivities
+	\item Optical detectors dominate market
+\end{itemize}
+
+\subsubsection{HPLC Absorbance Detectors}
+
+\begin{itemize}
+	\item Measure changes in light absorbance as solutes swept through small ($<$10 $\mu{}$L) cell
+	\item Thus, absorbance detectors measure a property of the analyte
+	\item Characteristics:
+	\begin{itemize}
+		\item Selective (response depends on molecular structure, i.e., $\epsilon$($\lambda$) = molar absorptivity)
+		\item Nondestructive, can collect effluent to isolate compounds manually or with an automated fraction collector
+		\item Good limits of detection (LOD):  ng to as low as 1 pg when $\epsilon$ large (e.g., 10,000 to 20,000)
+		\item Compatible with gradient elution
+		\begin{itemize}
+			\item But must not use solvents which don’t absorb at wavelength of interest, i.e., are UV-transparent
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Fixed Wavelength Detector (Filter Photometer)}
+
+\begin{itemize}
+	\item Uses low pressure Hg lamp, isolating intensive 254 nm emission line with filter
+	\item Other Hg emission lines can be isolated with proper filters
+	\begin{itemize}
+		\item 250, 313, 365 nm for example. There are others.
+	\end{itemize}
+	\item Detection is restricted to compounds absorbing at 254 nm or other emission line used
+	\item Quantification is based on Beer’s law: absorbance (A) is directly proportional to the extinction coefficient ($\epsilon$), path length ($l$), and concentration ($c$):  $A(\lambda) = \epsilon(\lambda)lc$
+	\item Note that different compounds have different $\epsilon(\lambda)$, so for a given chromatogram, peak heights don’t reflect relative analyte concentrations
+	\item Requires careful solute-by-solute calibration
+\end{itemize}
+
+\subsubsection{Variable Wavelength Detector (Spectrophotometer)}
+
+\begin{itemize}
+	\item Uses continuous or broad-band light source e.g., $D_2$ lamp 190-400 nm
+	\item Monochromator (grating optics) required for the dispersion of radiation and selection of a narrow bandpass for quantitative work
+	\item Allows flexibility in choice of $\lambda$, which can be changed over course of run
+	\item Operates otherwise like single wavelength detector, in that only 1 wavelength is measured at a time
+	\item Wavelength switching is possible with appropriate software
+\end{itemize}
+
+\subsubsection{Diode Array Detector (DAD)}
+
+\begin{itemize}
+	\item Uses an array of photodiodes (transducer which converts photon flow to electrical energy) to monitor many wavelengths simultaneously, rather than sequentially as with variable $\lambda$ detector
+	\begin{itemize}
+		\item Typical DAD has 328 diodes, each monitoring a 2 nm $\lambda$ range, with circuitry on a 2 mm $\times$ 18 mm chip
+	\end{itemize}
+	\item Obtains a complete spectrum in $<<$ 1 sec
+	\item Overcomes slow $\lambda$ scanning, too slow for HPLC with moving solutes
+	\item Obtains spectra in 3D with appropriate software i.e., obtain complete spectra at specified sampling rate
+	\begin{itemize}
+		\item A vs. $\lambda$:  absorption spectra of each component as it passes through detector
+		\item A vs. t: chromatogram
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Advantages of a Diode Array Detector (DAD)}
+
+\begin{itemize}
+	\item Increased sensitivity
+	\begin{itemize}
+		\item Allows for quantitative determination of each solute at its $\lambda{}_{max}$
+	\end{itemize}
+	\item More information is acquired as a full UV-vis absorption spectrum is obtained
+	\begin{itemize}
+		\item Helps in analyte identification
+		\item Chemometrics
+		\item Note: Chemometrics is the use of mathematical and statistical methods to improve the understanding of chemical information and to correlate quality parameters or physical properties to analytical instrument data.
+	\end{itemize}
+	\item Speed
+	\item Disadvantage: cost compared to single and variable wavelength detectors
+\end{itemize}
+
+\subsubsection{Refractive Index (RI) Detector}
+
+\begin{itemize}
+	\item A bulk-property detector, as monitors changes in the index of refraction of the column eluent with single or reference cells
+	\item Monitors sodium D-line (589 nm) emitted for sodium lamp
+	\item Advantages:
+	\begin{itemize}
+		\item Universal detector as it responds to most compounds as long as they have different refraction index than mobile phase
+		\item Nondestructive
+	\end{itemize}
+	\item Disadvantages:
+	\begin{itemize}
+		\item Poor sensitivity ($\mu{}g$ to $ng$ in very favorable circumstances)
+		\item Very temperature sensitive, needs control to \SI{0.001}{\celsius} for accurate work (i.e., sensitive to operating conditions)
+		\item Not compatible with gradient elution, as changing mobile phase composition also changes refractive index and therefore baseline. Even differential instrument can’t keep up
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Fluorescence Detector}
+
+\begin{itemize}
+	\item Responds to compounds that can be excited to fluoresce e.g., with a xenon lamp or more commonly with a laser
+	\item A selective detector, extremely sensitive (pg to fg LODs)
+	\item Very popular since many pharmaceutical products and environmental contaminants are fluorescent
+	\begin{itemize}
+		\item Require rigid (e.g., fused ring) system for optimal fluorescence
+		\item Note that many coeluting analytes in the sample matrix aren’t fluorescent and therefore won’t interfere
+		\item Precolumn or postcolumn derivatization (on-line) can introduce a fluorescent label into a compound, e.g., dansylation of \ang{1} or \ang{2} amines
+		\begin{itemize}
+			\item Note that this will change chromatography as a different chemical must be chromatographed!
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Electrochemical Detectors}
+
+\begin{itemize}
+	\item Useful for analytes that can be oxidized/reduced
+	\item Example: amperometric thin-layer detector
+	\begin{itemize}
+		\item working electrode (e.g., glassy carbon) embedded in wall of flow channel and held at constant voltage ($E_{app}$)
+		\item Current flows when a compound undergoes a redox reaction at the applied potential, with current $\propto$ C
+		\item Applied potential to electrode is adjustable, so detector may discriminate between different electroactive species
+	\end{itemize}
+	\item Other detectors possible e.g., voltammetric, conductometric, coulometric
+	\item pg detection limit for many analytes
+	\item Mobile phase must be conductive AND isocratic, e.g., aqueous mobile phase ion chromatography or reversed-phase
+\end{itemize}
+
 
 \subsection{Types of Chromatography in HPLC}
 
