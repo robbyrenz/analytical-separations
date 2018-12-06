@@ -62,6 +62,63 @@
 
 \subsection{Pumps}
 
+\begin{description}
+	\item[High Pressure Pumps] required to force liquid through a densely packed column at constant flow rate, so that $t_r$ is reproducible.
+\end{description} 
+
+Requirements of a pump:
+
+\begin{itemize}
+	\item output pressure all the way to 6000 psi, without any leaks; for UHPLC, the pressure is typically $\approx$ \SI{18000}{psi}
+	\item have variable flow rates, from \SIrange{0.1}{10}{mL/min}; for UHPLC, the pressure can go all the way down to \SI{0.01}{mL/min}
+	\item have a pulse-free output
+	\item have a reproducible flow rate (ours to \SI{+-0.3}{\%})
+\end{itemize}
+
+\subsubsection{Reciprocating Pumps}
+These are the most common today, replacing pneumatic and displacement (syringe) pumps.
+
+A single piston reciprocating pump:
+
+\begin{itemize}
+	\item an eccentric (off-center) can drives a piston back and forth
+	\item its motion is synchronized with operation of check valves which control direction of flow
+	\item Fill stroke: piston cavity fills, drawing solvent through the inlet check valve via suction; the outlet valve is closed
+	\item delivery stroke: mobile phase forced through column as inlet check valve closes and the outlet valve opens. Pulsed flow produces baseline noise that must be damped
+	\item electronic pulse compensation: speeds up piston during refill cycle, reducing the time the piston is not delivering solvent ($\approx$ \SI{200}{ms}); this reduces the noisy baseline
+	\item note that the pulse flow pulsates, but the time-averaged flow rate is constant
+	\item the regular pressure surge spikes in the baseline may still be seen at extreme sensitive detector
+	\item an elliptical cam minimize pulsations
+\end{itemize}
+
+\subsubsection{Dual Piston Reciprocating Pumps}
+
+\begin{itemize}
+	\item essentially 2 single-piston pumps driven by the same motor
+	\item 2 pistons are \ang{180} out of phase, i.e., they are synchronized to provide a continuous flow of mobile phase
+	\item when one is in the fill stroke, the other is on deliver stroke
+\end{itemize}
+
+\subsubsection{HPLC solvents (Mobile Phase)}
+
+Solvents need to be HPLC or of similar high-grade for a stable baseline and to extend the life of the column, 'cause those things are expensive!
+
+\begin{description}
+	\item[Filtration] to remove particulate matter
+	\item[Degassing] to remove dissolved gases, especially \ce{N2} and \ce{O2}, by vacuum or \ce{He} sparging 
+\end{description}
+
+\subsubsection{Pressure Drop Across Column (Backpressure)}
+
+\begin{itemize}
+	\item Pressure developed when the liquid mobile phase is pumped through the (packed) HPLC column: 
+
+*enter the equation for backpressure*
+
+	\item therefore, for much larger backpressure occurs with smaller particles, more tightly packed column and a more viscous mobile phase
+	\item there is a tradeoff between better performance and higher pressure
+\end{itemize}
+
 
 \subsection{Elution Techniques}
 
