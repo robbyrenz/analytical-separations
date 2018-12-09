@@ -66,10 +66,12 @@ The main objective of this experiment is to make a method that uses a SIM for qu
 \section{Chemicals, Methods and Instrumentation}
 
 \subsection{Chemicals}
-Benzaldehyde (Sigma Aldrich, Lot: 41696 PKV), nitrobenzene (Alfa Aesar, Lot: A06V040, 99\%, CAS: 98-95-3), methanol (HPLC grade, Caledon, Lot: 103267, CAS: 108-90-7), salicylamide (Sigma Aldrich, Lot: S51885-279, CAS: 65-45-2), phenacetin (Sigma Aldrich, Lot 78C-0014), acetominophen (Sigma Aldrich, Lot: 32F-0073), caffeine (Sigma Aldrich, Lot: 0316B4), and an unknown pharmaceutical mixture was used in this experiment.
+Old: Benzaldehyde (Sigma Aldrich, Lot: 41696 PKV), nitrobenzene (Alfa Aesar, Lot: A06V040, 99\%, CAS: 98-95-3), methanol (HPLC grade, Caledon, Lot: 103267, CAS: 108-90-7), salicylamide (Sigma Aldrich, Lot: S51885-279, CAS: 65-45-2), phenacetin (Sigma Aldrich, Lot 78C-0014), acetominophen (Sigma Aldrich, Lot: 32F-0073), caffeine (Sigma Aldrich, Lot: 0316B4), and an unknown pharmaceutical mixture was used in this experiment.
+
+New: In the first week, something. In the second week, more of something. Finally, in the last week, the last of something.
 
 \subsection{Instrumentation}
-The separation and analysis of the unknown pharmaceutical mixtures, and the standards, were performed on an Agilent 1100 Series, with a 1260 Infinity degasser (both by Agilent Technologies), fitted with a diode array detector (DAD). The type of column used was a Symmetry\textregistered{} \ce{C18} (particle size of \SI{5}{\mu{}m}, diameter of \SI{4.6}{mm}, and a length of \SI{150}{mm}). The flow rate for each analysis was kept at a constant value of \SI{1}{mL/min}, and the injection volume was \SI{5}{\mu{}L} for each analysis.
+The separation and analysis of the entire experiment was performed on an Agilent 7890A GC, coupled with a 5975C inert XL EIICI MSD with a triple exis detector. The dimensions of the column used was $30m \times 0.250mm \times 0.25\mu{}m$, by Agilent Technologies. The stationary phase was (5\%-Phenyl)-methylpolysiloxane. Each analysis was performed with the injection mode at splitless, with \ce{He} as the carrier gas, and the flow rate was set at \SI{1}{mL/min}. Do I need to state the pressure and volume?
 
 \subsection{Methods}
 
@@ -80,36 +82,29 @@ The separation and analysis of the unknown pharmaceutical mixtures, and the stan
 \section{Results and Discussion}
 
 \subsection{Results}
-As stated earlier, in the first week of the experiment, the compositions of the mobile phase, methanol, was being varied with HPLC-grade water in order to notice the differences in separations in RP-HPLC. The corresponding chromatograms are given in the appendix (figures 1 to 4), and tables \ref{tab-cf-benzaldehyde}, \ref{tab-cf-nitrobenzene} and \ref{tab-cf-chlorobenzene} summarizes the aforementioned chromatograms in terms of its capacity factors. In addition, figure \ref{fig-capacity-factors} in the results section illustrates the log of the capacity factors of the three compounds as a function of the polarity of methanol, and table \ref{tab-selectivity} shows how the selectivity factor ($\alpha$) varies with the polarity of methanol. Also, figure \ref{fig-selectivity} in the results section illustrate this graphically.
+Table \ref{tab-para} shows some cool stuff.
 
 \begin{table}[h!]
 	\centering
-	\caption{Data that shows how the capacity factor (k') of benzaldehyde differ with the change in composition in methanol.}
+	\caption{Selected Ion Monitoring Parameters}
+	\hfill \\
 	\begin{tabular}{|c|c|c|}
 		\hline
-		Methanol/\% & k' of benzaldehyde & log k' \\
+		Compound & Ions Monitored (m/z) & Time window (min) \\
 		\hline
-		90 & 0.218 & -0.662 \\
+		`2-HCH & 180.9, 218.9, 181, 219 & 0.5 - 19 \\
 		\hline
-		80 & 0.333 & -0.478 \\
+		BDE-47 & 326, 486 & 19 - 22.5 \\
 		\hline
-		70 & 0.497 & -0.304 \\
+		PBB-77 & 470, 310 & 22.5 - 24 or 34 \\
 		\hline
 	\end{tabular}
-	\label{tab-cf-benzaldehyde}
+	\label{tab-para}
 \end{table}
 
 
 \subsection{Discussion}
-The peaks in the chromatogram in figure 4 were able to identified as benzaldehyde, nitrobenzene and chlorobenzene by comparing and matching their retention times to the standards in figures 5, 6 and 7. 
 
-Tables \ref{tab-cf-benzaldehyde}, \ref{tab-cf-nitrobenzene} and \ref{tab-cf-chlorobenzene}, and figure \ref{fig-capacity-factors} clearly show that the capacity factor increases as the percentage of methanol decreases (that is, the polarity of methanol increases). Capacity factor, also known as retention factor \cite{harris}, denotes the time required for the analyte in question to elute \cite{harris}. A greater capacity factor indicates that it is greatly attracted to the column, interacting with the stationary phase \cite{harris}. Therefore, one can conclude that, as it can be clearly seen in figure 4, benzaldehyde is the most polar while chlorobenzene is the least polar of the three compounds; as stated earlier, in RP chromatography, the solvent is more polar than the stationary phase \cite{harris}.
-
-In the quantitative identification of the pharmaceutical unknown mixture, the initial concentration of the mobile phase was chosen as 50\% methanol, and based on the chromatogram received, this composition was considered to be desirable for the analysis of the aforementioned unknown mixture. This was based on the resolution and the retention time for each peaks. Furthermore, by comparing the the chromatogram of the unknown in figure 8 to the standards of the chromatograms in figures 9, 10, 11 and 12, it was realized that the unknown contains the compounds phenacetin and salicylamide. Again, this was determined by cross-referencing the retention times to the standards.
-
-For determining which of the compounds, phenacetin or salicylamide, would be chosen for quantitative analysis, it was agreed that phenacetin would be the ideal option as its peak area is much greater than salicylamide. As for the internal standards, caffeine instead of acetaminophen was chosen as its peak area is similar to phenacetin.
-
-As it can be seen in table \ref{tab-pressure}, the pressure increases whenever the polarity of the mobile phase, in this case methanol, increases (by the addition of water). This is because as one increases the amount of water in the solvent, it increases the viscosity of the solvent, so a higher pressure is required to maintain the flow rate \cite{harris}.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5 (BIBLIOGRAPHY)
@@ -127,17 +122,6 @@ As it can be seen in table \ref{tab-pressure}, the pressure increases whenever t
 \subsection{Calculations}
 
 \begin{description}
-	\item[Calculating the response factor] \hfill \\
-		\begin{equation} \label{response-factor}
-		\begin{split}
-			\frac{\textit{Area of Analyte Signal}}{\textit{Concentration of Analyte}} & = F\Bigg(\frac{\textit{Area of Standard Signal}}{\textit{Concentration of Standard}}\Bigg) \\
-			\frac{A_X}{[X]} & = F\Bigg(\frac{A_S}{[S]}\Bigg)
-		\end{split}
-		\end{equation}
-			Equation \ref{response-factor} was taken from \cite{harris}, where $[X]$ and $[S]$ represent the concentrations of analyte and of the standard, respectively.
-
-	\item[$\%$RSD] \hfill \\
-
 	\item[Calculating the capacity factor of chlorobenzene for figure 2 of the chromatogram] \hfill \\
 		\begin{equation} \label{equ-capacity-factor}
 			\begin{split}
@@ -151,7 +135,7 @@ As it can be seen in table \ref{tab-pressure}, the pressure increases whenever t
 \end{description}
 
 \subsection{Chromatograms}
-There are 22 sheets of HPLC chromatograms.
+There are ? sheets of GC-MS chromatograms.
 
 %----------------------------------------------------------------------------------------
 
