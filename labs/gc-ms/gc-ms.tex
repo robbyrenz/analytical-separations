@@ -224,13 +224,10 @@ Table \ref{tab-recovery} shows the recovery rate of the internal standard, PBB-7
 		2 (first run)      & \num{8.38e-05}                             & 44.04                   \\ \hline
 		2 (second run)     & \num{7.60e-05}                             & 39.90                   \\ \hline
 	\end{tabular}
+	\label{tab-recovery}
 \end{table}
 
 \subsection{Discussion}
-\begin{itemize}
-	\item maybe talk about the difference between internal standards and standard additions?
-	\item maybe talk about LRMS?
-\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5 (BIBLIOGRAPHY)
@@ -249,6 +246,25 @@ Table \ref{tab-recovery} shows the recovery rate of the internal standard, PBB-7
 
 
 \begin{description}
+
+	\item[Calculating the final concentration of BDE-47 in the calibration solution] \hfill \\
+		\begin{equation} \label{equ-conc}
+			\begin{split}
+				\textit{initial concentration} \times \frac{\textit{initial volume}}{\textit{final volume}} & = \textit{final concentration} \\
+				10 \si{\mu{}g/mL} \times \frac{0.01\si{mL}}{1.05\si{mL}} & = 0.0952 \si{\mu{}g/mL}
+			\end{split}
+		\end{equation}
+		Equation \ref{equ-conc} was taken from \cite{harris}.
+
+	\item[Calculating the relative response factor of BDE-47] \hfill \\
+		\begin{gather*} \label{equ-rrf}
+				\textit{Mass of BDE-47 in the calibration solution} = \textit{volume} \times \textit{concentration} \\
+				0.01\si{mL} \times 0.0952 \si{\mu{}g/mL} = \SI{9.52e-4}{\mu{}g} \\
+				\textit{Response Factor} = \frac{\textit{Mass}}{\textit{area}} \\
+				\frac{\SI{9.52e-04}{\mu{}g}}{367089} = \SI{2.59e-09}{\mu{}g} \\
+				\textit{Relative response factor} = \frac{\textit{Response factor}_{BDE-47}}{\textit{Response factor}_{PBB-77}} \\
+				\frac{\num{2.59e-9}}{\num{4.14e-09}} = \num{6.27e-1}
+		\end{gather*}
 
 	\item[Calculating the response factor] \hfill \\
 		\begin{equation} \label{response-factor}
