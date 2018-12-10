@@ -20,7 +20,7 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Analysis and Identification of a Thingy using GC-MS \\ CHEM 4303 \\ Analytical Separations} % Title
+\title{Analysis and Quantification of 2,2',4,4'-Tetrabromodiphenyl ether using Gas Chromatography Coupled with a Low-Resolution Mass Spectrometry \\ CHEM 4303 \\ Analytical Separations} % Title
 
 \author{Robby \textsc{Renz}} % Author name
 
@@ -31,12 +31,12 @@
 \maketitle % Insert the title, author and date
 
 \begin{center}
-\begin{tabular}{l r}
-Date Performed: & November 13, 2018 \\ % Date the experiment was performed
-Date Completed: & November 27, 2018 \\
-Partner: & Jaya Roe \\ % Partner name
-Lab Instructor: & Kevin Stroski % Instructor/supervisor
-\end{tabular}
+	\begin{tabular}{l r}
+		Date Performed: & November 13, 2018 \\ % Date the experiment was performed
+		Date Completed: & November 27, 2018 \\
+		Partner: & Jaya Roe \\ % Partner name
+		Lab Instructor: & Kevin Stroski % Instructor/supervisor
+	\end{tabular}
 \end{center}
 
 %----------------------------------------------------------------------------------------
@@ -61,7 +61,9 @@ LRMS is commonly done with selected ion monitoring (SIM) \cite{bjorklund_mass_20
 
 Internal standards are used for a number of reasons, such as when sample loss is expected during the sample preparation step, or when the response of the quantity of sample detected differs at each analysis \cite{harris}. Essentially, an internal standard is a known quantity of a compound that differs from the analyte, and is added to the mixture containing the analyte to be detected \cite{harris}. 
 
-Injectors are awesome!
+A splitless injection mode is used for trace analysis. 
+
+An injection mode of splitless rather than a split is used when attempting to analyze trace chemicals \cite{harris}. Furthermore, a splitless injection mode minimizes solvent tailing by opening the split vent after around \SI{1}{min} so that the any remaining sample in the injection port can be purged \cite{vitha_chromatography:_2017}.
 
 The main objective of this entire experiment is to detect as well as quantify BDE-47 in a sample of fish oil. This is accomplished by making a method that utilizes a SIM.
 
@@ -75,9 +77,14 @@ The main objective of this entire experiment is to detect as well as quantify BD
 In the first week, BDE-47, PBB-77 and `2-\ce{HCH}, all of each were at a concentration of \SI{50}{\mu{}g/mL} in isooctane, were used as standard solutions. In the second week, fish oil (Exact Norwegian Cod Liver Oil), dichloromethane (emd, Lot 5Q160, CAS: 75-09-2) and PBB-77, at a concentration of \SI{10}{\mu{}g/mL} in isooctane, were used as chemicals. Finally, in the last week, BDE-47, PBB-77 and `2-\ce{HCH}, each at a concentration of \SI{10}{\mu{}g/mL} in isooctane, were used. Throughout the entirety of the experiment, hexane (Caledon Laboratory Chemicals, CAS no. 110-54-3, LOT: 89001) and isooctane (OmniSolv, CAS: 540-84-1, LOT: 52054) were used.
 
 \subsection{Instrumentation}
-The separation and analysis of the entire experiment was performed on an Agilent 7890A GC, coupled with a 5975C inert XL EI/CI MSD with a triple axis detector. The dimensions of the column used was $30m \times 0.250mm \times 0.25\mu{}m$, by Agilent Technologies. The stationary phase was (5\%-Phenyl)-methylpolysiloxane. Each analysis was performed with the injection mode at splitless, with \ce{He} as the carrier gas, and the flow rate was set at \SI{1}{mL/min}. Do I need to state the pressure and volume and splitless?
+The separation and analysis of the entire experiment was performed on an Agilent 7890A GC, coupled with a 5975C inert XL EI/CI MSD with a triple axis detector. The dimensions of the column used was $30m \times 0.250mm \times 0.25\mu{}m$, by Agilent Technologies. The stationary phase was (5\%-Phenyl)-methylpolysiloxane. Each analysis was performed with the injection mode at splitless, with \ce{He} as the carrier gas, and the flow rate was set at \SI{1}{mL/min}. The injection mode used for each analysis was splitless, and the injection volume was \SI{2}{\mu{}L} for each analysis.
 
 \subsection{Methods}
+In the first week of the experiment, a (normalized) full scan spectrum was obtained for BDE-47, PBB-77 and `2-\ce{HCH}. The upper limit of the scan range was set to 30 \si{\amu} more than the molecular weight of the respective analyte that was being analyzed. For each analysis, the oven temperature was initially set to \SI{100}{\degreeCelsius} for \SI{5}{min}, then it was increased to \SI{280}{\degreeCelsius} at a rate of \SI{10}{\degreeCelsius/min}, and it was held at that temperature for \SI{7}{min}. Furthermore, the temperature of the splitless injection port was set to \SI{260}{\degreeCelsius}, the electron energy was set to \SI{70}{eV}, and the temperature of the GC-MSD interface was fixed at a temperature of \SI{280}{\degreeCelsius}.
+
+In the second week of the experiment, two samples of fish oil were prepared by adding \SI{2}{\mu{}g/mL} of PBB-77 as the internal standard to the sample, and then having it undergo solid-phase extraction in order to extract lipids. Afterwards, the majority of the solvent was then removed from the sample through rotary evaporation.
+
+In the last week of the experiment, a calibration solution was produced by adding each of BDE-47 and PBB-77, at a volume of \SI{10}{\mu{}L}, to a \SI{0.5}{mL} of isooctane contained in an auto sampler vial, and it was diluted all the way to \SI{1.0}{mL} with the solvent. \SI{50}{\mu{}L} of `2-\ce{HCH} was added to the calibration solution, while \SI{10}{\mu{}L} was added to the fish samples that was prepared last week. Finally, the GC-MS was set to scan only two ions per analyte, the parameters that was selected is shown in table \ref{tab-para}. Refer to table ref to see which 2 ions was monitored.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -145,6 +152,7 @@ Table \ref{tab-para} shows some cool stuff, and table \ref{tab-mass} shows the m
 \begin{itemize}
 	\item maybe talk about the difference between internal standards and standard additions?
 	\item maybe talk about LRMS?
+	\item maybe talk about why we use splitless mode of injection rather than a split or even a on-column injection?
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
