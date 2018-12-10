@@ -53,11 +53,17 @@ Lab Instructor: & Kevin Stroski % Instructor/supervisor
 %----------------------------------------------------------------------------------------
 
 \section{Introduction}
-Gas chromatography (GC) is a separation technique that analyzes volatile compounds \cite{vitha_chromatography:_2017}. Consequently, this analysis can lead a lot of useful situations such as the determination of the purity of a compound or even detecting explosives \cite{vitha_chromatography:_2017}. In GC, the analyte is volatilized and carried through the column by the mobile phase, often called the carrier gas \cite{harris}. This carrier gas can either be \ce{He} or \ce{H2} \cite{harris}. These gases are often chosen as the carrier gas as they are chemically inert and would therefore not react with the analytes \cite{vitha_chromatography:_2017}.
+Gas chromatography (GC) is a separation technique that analyzes volatile compounds \cite{vitha_chromatography:_2017}. Consequently, this analysis can lead a lot of useful situations such as the determination of the purity of a compound or even quantifying individual components in mixtures \cite{vitha_chromatography:_2017}. In GC, the analyte is volatilized and carried through the column by the mobile phase, often called the carrier gas \cite{harris}. This carrier gas can either be \ce{He} or \ce{H2} \cite{harris}. These gases are often chosen as the carrier gas as they are chemically inert and would therefore not react with the analytes \cite{vitha_chromatography:_2017}.
 
-Polybrominated diphenyl ethers (PBDEs) are a class of halogenated compounds that are commonly used as flame retardants \cite{bjorklund_mass_2003}. These compounds are an environmental health hazard as they have the potential to accumulate in the food chain \cite{thomsen_comparing_2002}. In addition, BDE-47, a PBDE congener, has been found to cause neurotoxic effects in adults \cite{thomsen_comparing_2002}. Commonly used detection techniques for PBDEs are high-resolution mass spectrometry and low-resolution mass spectrometry (LRMS) \cite{bjorklund_mass_2003}. LRMS is commonly done with selected ion monitoring (SIM) \cite{bjorklund_mass_2003}. SIM increases the selectivity of mass spectrometry for analytes and reduces its response to everything else \cite{harris}.
+Polybrominated diphenyl ethers (PBDEs) are a class of halogenated compounds that are commonly used as flame retardants \cite{bjorklund_mass_2003}. These compounds are an environmental health hazard as they have the potential to accumulate in the food chain \cite{thomsen_comparing_2002}. In addition, 2,2',4,4'-Tetrabromodiphenyl ether, also known as BDE-47 \cite{rat}, is a PBDE congener, and has been found to cause neurotoxic effects in adults \cite{thomsen_comparing_2002}. Commonly used detection techniques for PBDEs are high-resolution mass spectrometry and low-resolution mass spectrometry (LRMS) \cite{bjorklund_mass_2003}.
 
-The main objective of this experiment is to make a method that uses a SIM for quantitative analysis of PBDEs by GC-EI-LRMS.
+LRMS is commonly done with selected ion monitoring (SIM) \cite{bjorklund_mass_2003}. SIM increases the selectivity of mass spectrometry for analytes and reduces its response to everything else \cite{harris}. It does this by setting the mass spectrometer to detect just one or even a few m/z values \cite{harris}. One of the advantages of SIM is that the signal-to-noise ratio greatly increases as the mass spectrometer spends its entire analysis time measuring that particular ion, or a couple of ions \cite{harris}.
+
+Internal standards are used for a number of reasons, such as when sample loss is expected during the sample preparation step, or when the response of the quantity of sample detected differs at each analysis \cite{harris}. Essentially, an internal standard is a known quantity of a compound that differs from the analyte, and is added to the mixture containing the analyte to be detected \cite{harris}. 
+
+Injectors are awesome!
+
+The main objective of this entire experiment is to detect as well as quantify BDE-47 in a sample of fish oil. This is accomplished by making a method that utilizes a SIM.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -136,7 +142,10 @@ Table \ref{tab-para} shows some cool stuff, and table \ref{tab-mass} shows the m
 
 
 \subsection{Discussion}
-
+\begin{itemize}
+	\item maybe talk about the difference between internal standards and standard additions?
+	\item maybe talk about LRMS?
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5 (BIBLIOGRAPHY)
@@ -153,7 +162,18 @@ Table \ref{tab-para} shows some cool stuff, and table \ref{tab-mass} shows the m
 
 \subsection{Calculations}
 
+
 \begin{description}
+
+	\item[Calculating the response factor] \hfill \\
+		\begin{equation} \label{response-factor}
+			\begin{split}
+				\frac{\textit{Area of Analyte Signal}}{\textit{Concentration of Analyte}} & = F\Bigg(\frac{\textit{Area of Standard Signal}}{\textit{Concentration of Standard}}\Bigg) \\
+				\frac{A_X}{[X]} & = F\Bigg(\frac{A_S}{[S]}\Bigg)
+			\end{split}
+		\end{equation}
+		Equation \ref{response-factor} was taken from \cite{harris}, where $[X]$ and $[S]$ represent the concentrations of analyte and of the standard, respectively.
+
 	\item[Calculating the capacity factor of chlorobenzene for figure 2 of the chromatogram] \hfill \\
 		\begin{equation} \label{equ-capacity-factor}
 			\begin{split}
@@ -164,7 +184,9 @@ Table \ref{tab-para} shows some cool stuff, and table \ref{tab-mass} shows the m
 			\end{split}
 		\end{equation}
 		Equation \ref{equ-capacity-factor} was taken from \cite{harris}.
+
 \end{description}
+
 
 \subsection{Chromatograms}
 There are ? sheets of GC-MS chromatograms.
